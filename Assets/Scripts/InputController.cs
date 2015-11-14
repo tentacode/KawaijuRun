@@ -14,40 +14,75 @@ public class InputController : MonoBehaviour
 
 	void Update()
 	{
-		if (IsSwipeUp()) {
-			Debug.Log ("Swipe up");
+		if (Input.touchCount > 0) {
+			var touch = Input.GetTouch(0);
+			if (touch.phase == TouchPhase.Began) {
+				swipeBeginPosition = touch.position;
+			}
 		}
 
-		if (IsSwipeDown()) {
-			Debug.Log ("Swipe down");
-		}
+		// if (IsSwipeUp()) {
+		// 	Debug.Log ("Swipe up");
+		// }
 
-		if (IsSwipeRight()) {
-			Debug.Log ("Swipe right");
-		}
+		// if (IsSwipeDown()) {
+		// 	Debug.Log ("Swipe down");
+		// }
+
+		// if (IsSwipeRight()) {
+		// 	Debug.Log ("Swipe right");
+		// }
 		
-		if (IsTapBottom()) {
-			Debug.Log ("Tap bottom");
-		}
+		// if (IsTapBottom()) {
+		// 	Debug.Log ("Tap bottom");
+		// }
 		
-		if (IsTapUp()) {
-			Debug.Log ("Tap up");
-		}
+		// if (GetTapUpPosition().HasValue) {
+		// 	Debug.Log ("Tap up");
+		// }
 	}
 	
-	bool IsSwipeUp()
+	public bool IsSwipeUp()
 	{
 		return IsSwipe(DIRECTION_UP);
 	}
 	
-	bool IsSwipeDown()
+	public bool IsSwipeDown()
 	{
 		return IsSwipe(DIRECTION_DOWN);
 	}
 	
-	bool IsSwipeRight()
+	public bool IsSwipeRight()
 	{
 		return IsSwipe(DIRECTION_RIGHT);
+	}
+	
+	public bool IsTapBottom()
+	{
+		Vector2 position;
+		if (Input.GetButtonUp("Fire1") && null == GetSlidingDirection()) {
+			position = Input.mousePosition;
+			float splitPosition = Screen.height * tapScreenSplitRatio;
+			
+			return position.y < splitPosition;
+		}
+		
+		return false;
+	}
+	
+	public Vector2? GetTapUpPosition()
+	{
+		Vector2 position;
+		if (Input.GetButtonUp("Fire1") && null == GetSlidingDirection()) {
+			position = Input.mousePosition;
+			float splitPosition = Screen.height * tapScreenSplitRatio;
+			
+			if (position.y >= splitPosition) {
+				return position;
+			}
+		}
+		
+		return null;
 	}
 
 	bool IsSwipe(string direction)
@@ -66,58 +101,30 @@ public class InputController : MonoBehaviour
 		}
 
 		var touch = Input.GetTouch(0);
-		if (touch.phase == TouchPhase.Began) {
-			swipeBeginPosition = touch.position;
+
+		if (touch.phase != TouchPhase.Ended) {
 			return null;
 		}
 
-		if (touch.phase == TouchPhase.Ended) {
-			Vector2 deltaPosition = touch.position - swipeBeginPosition;
-			if (deltaPosition.magnitude < mininmumSwipeMagnitude) {
-				return null;
-			}
+		Vector2 deltaPosition = touch.position - swipeBeginPosition;
+		if (deltaPosition.magnitude < mininmumSwipeMagnitude) {
+			return null;
+		}
 
-			var angle = Mathf.Atan2(deltaPosition.y, deltaPosition.x) * Mathf.Rad2Deg;
+		var angle = Mathf.Atan2(deltaPosition.y, deltaPosition.x) * Mathf.Rad2Deg;
 
-			if (angle < 135 && angle >= 45) {
-				return DIRECTION_UP;
-			}
+		if (angle < 135 && angle >= 45) {
+			return DIRECTION_UP;
+		}
 
-			if (angle < 45 && angle >= -45) {
-				return DIRECTION_RIGHT;
-			}
+		if (angle < 45 && angle >= -45) {
+			return DIRECTION_RIGHT;
+		}
 
-			if (angle < -45 && angle >= -135) {
-				return DIRECTION_DOWN;
-			}
+		if (angle < -45 && angle >= -135) {
+			return DIRECTION_DOWN;
 		}
 		
 		return null;
-	}
-	
-	bool IsTapBottom()
-	{
-		Vector2 position;
-		if (Input.GetButtonUp("Fire1") && null == GetSlidingDirection()) {
-			position = Input.mousePosition;
-			float splitPosition = Screen.height * tapScreenSplitRatio;
-			
-			return position.y < splitPosition;
-		}
-		
-		return false;
-	}
-	
-	bool IsTapUp()
-	{
-		Vector2 position;
-		if (Input.GetButtonUp("Fire1") && null == GetSlidingDirection()) {
-			position = Input.mousePosition;
-			float splitPosition = Screen.height * tapScreenSplitRatio;
-			
-			return position.y >= splitPosition;
-		}
-		
-		return false;
 	}
 }
