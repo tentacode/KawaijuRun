@@ -128,6 +128,19 @@ Prefab:
       propertyPath: inputController
       value: 
       objectReference: {fileID: 2132428168}
+    - target: {fileID: 21252676, guid: 8137c3241dae75a489f908934560c558, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 66c2e10e55580e943b13d70c2b532359,
+        type: 3}
+    - target: {fileID: 6147976, guid: 8137c3241dae75a489f908934560c558, type: 2}
+      propertyPath: m_Offset.y
+      value: -.181044579
+      objectReference: {fileID: 0}
+    - target: {fileID: 6147976, guid: 8137c3241dae75a489f908934560c558, type: 2}
+      propertyPath: m_Size.y
+      value: 3.91275263
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8137c3241dae75a489f908934560c558, type: 2}
   m_IsPrefabParent: 0
@@ -491,7 +504,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 12.3199997
+      value: 10.3299999
       objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_LocalPosition.y
@@ -499,7 +512,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .041015625
+      value: -5.30000019
       objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_LocalRotation.x
@@ -599,6 +612,23 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 5022068, guid: 8137c3241dae75a489f908934560c558,
     type: 2}
   m_PrefabInternal: {fileID: 205856280}
+--- !u!95 &1304878083
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1304878075}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 84845909ce0a757428d1aa46fe5a2cfb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1937888878
 GameObject:
   m_ObjectHideFlags: 0
