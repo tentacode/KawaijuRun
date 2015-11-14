@@ -85,7 +85,7 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &214010045
+--- !u!1001 &205856280
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -485,10 +485,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_LocalPosition.x
       value: 12.3199997
@@ -524,39 +520,8 @@ Prefab:
     - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: scenario
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[0].action
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[0].delayForNextStep
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[1].action
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[1].delayForNextStep
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[2].action
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[2].delayForNextStep
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[3].action
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[3].delayForNextStep
-      value: .5
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11455434, guid: cd88de0f16d72144c95aad369dffa2bc,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
   m_IsPrefabParent: 0
@@ -605,12 +570,12 @@ Prefab:
 --- !u!1 &1304878075 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 112424, guid: 8137c3241dae75a489f908934560c558, type: 2}
-  m_PrefabInternal: {fileID: 214010045}
+  m_PrefabInternal: {fileID: 205856280}
 --- !u!50 &1304878077 stripped
 Rigidbody2D:
   m_PrefabParentObject: {fileID: 5022068, guid: 8137c3241dae75a489f908934560c558,
     type: 2}
-  m_PrefabInternal: {fileID: 214010045}
+  m_PrefabInternal: {fileID: 205856280}
 --- !u!1 &1937888878
 GameObject:
   m_ObjectHideFlags: 0
