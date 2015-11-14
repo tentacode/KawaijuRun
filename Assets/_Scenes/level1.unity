@@ -548,6 +548,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1204249416 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 406028, guid: 8137c3241dae75a489f908934560c558, type: 2}
+  m_PrefabInternal: {fileID: 205856280}
 --- !u!1001 &1208726803
 Prefab:
   m_ObjectHideFlags: 0
@@ -678,5 +682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4e9c5378622a46c2839b7bdd5fd5377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 568515209}
+  spawnPoint: {fileID: 1204249416}
   tapScreenSplitRatio: .330000013
   mininmumSwipeMagnitude: 30
