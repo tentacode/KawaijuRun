@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class MainCharacterController : MonoBehaviour
 {
-    public enum States {Idle, Shooting, Jumping};
+    public enum States {Idle, Shooting, Jumping, Dead};
     public float invulerabilityDelay;
+    public float gameOverDelay;
 
     private States state = States.Idle;
     private int heart = 3;
@@ -22,7 +24,7 @@ public class MainCharacterController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (invulnerable) {
+        if (invulnerable || state == States.Dead) {
             return;
         }
 
@@ -35,10 +37,18 @@ public class MainCharacterController : MonoBehaviour
     IEnumerator Hurt()
     {
         heart--;
-        Debug.Log("Heart:" + heart);
 
         GameObject heartUi = GameObject.FindGameObjectsWithTag("Heart")[0];
         heartUi.SetActive(false);
+
+        if (heart == 0) {
+            state = States.Dead;
+            GetComponent<MainCharacterMover>().walkSpeed = 0.0f;
+            GameObject gameOverUi = GameObject.FindGameObjectsWithTag("GameOver")[0];
+            yield return new WaitForSeconds(gameOverDelay);
+            gameOverUi.GetComponent<Text>().text = "GAME OVER";
+            return true;
+        }
 
         invulnerable = true;
         yield return new WaitForSeconds(invulerabilityDelay);
