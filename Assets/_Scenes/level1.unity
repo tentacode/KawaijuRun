@@ -102,7 +102,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433178, guid: 8137c3241dae75a489f908934560c558, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.4000001
       objectReference: {fileID: 0}
     - target: {fileID: 433178, guid: 8137c3241dae75a489f908934560c558, type: 2}
       propertyPath: m_LocalRotation.x
@@ -139,6 +139,7 @@ GameObject:
   - 92: {fileID: 568515208}
   - 124: {fileID: 568515207}
   - 81: {fileID: 568515206}
+  - 114: {fileID: 568515211}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -214,7 +215,20 @@ Transform:
   - {fileID: 1517838065}
   - {fileID: 2123698773}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
+--- !u!114 &568515211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 568515205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604eb854ded97184b8043adb63a1be59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1304878075}
+  defaultPosition: {x: 5, y: 0}
 --- !u!1 &1304878075 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 112424, guid: 8137c3241dae75a489f908934560c558, type: 2}
