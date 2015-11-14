@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6147976}
   - 50: {fileID: 5022068}
   - 114: {fileID: 11401374}
+  - 114: {fileID: 11443752}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
@@ -72,6 +73,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 5
+--- !u!114 &11443752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97802f80039e44972bb9b25c2ed44dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCharacterController: {fileID: 0}
+  inputController: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  projectile: {fileID: 0}
+  speed: 0
+  cooldown: 0
 --- !u!212 &21252676
 SpriteRenderer:
   m_ObjectHideFlags: 1
