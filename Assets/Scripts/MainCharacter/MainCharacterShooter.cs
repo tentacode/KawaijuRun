@@ -30,16 +30,15 @@ public class MainCharacterShooter : MonoBehaviour
 
 		Vector3 shootPoint;
 
-		shootPoint = tapPosition;
-        shootPoint = Camera.main.ScreenToWorldPoint(shootPoint);
-		shootPoint = shootPoint - spawnPoint.position;
-
-        float angle = Mathf.Atan(shootPoint.y / shootPoint.x);
+        shootPoint = Camera.main.ScreenToWorldPoint(tapPosition);
+        Vector2 deltaPosition = shootPoint - spawnPoint.position;
+        var angle = Mathf.Atan2(deltaPosition.y, deltaPosition.x);// * Mathf.Rad2Deg;
 
         GameObject projectileInstance = Instantiate(projectile, spawnPoint.position, Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
-		projectileInstance.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Cos(angle) * speed, Mathf.Sin(angle) * speed);
 
-		StartCoroutine(Cooldown());
+        projectileInstance.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Cos(angle) * speed, Mathf.Sin(angle) * speed);
+        
+        StartCoroutine(Cooldown());
 	}
 
 	bool CanShoot()
