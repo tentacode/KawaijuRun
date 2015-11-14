@@ -55,7 +55,6 @@ public class EnnemyController : MonoBehaviour
         }
 
         isTriggered = true;
-        Debug.Log("Begin behavior");
         StartCoroutine(ExecuteStep());
     }
 
@@ -63,7 +62,6 @@ public class EnnemyController : MonoBehaviour
     {
         ScenarioStep step = scenario[stepIndex];
 
-        Debug.Log("set action to " + step.action);
         switch (step.action)
         {
             case ScenarioStep.EnnemyActions.move:
@@ -90,20 +88,17 @@ public class EnnemyController : MonoBehaviour
 
     void Shoot()
     {
-        Debug.Log("shoot");
         Instantiate(ammo, gameObject.transform.position, Quaternion.identity);
         ammo.GetComponent<Ammo>().Launch();
     }
 
     void Move()
     {
-        Debug.Log("move");
         rb.velocity = new Vector2(-1f * movingSpeed, 0f);
     }
 
     void Stop()
     {
-        Debug.Log("stop");
         rb.velocity = new Vector2(0f, 0f);
     }
 

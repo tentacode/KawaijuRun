@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11447410}
   m_Layer: 0
   m_Name: helico Ammo
-  m_TagString: Untagged
+  m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,6 +146,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: launchVelocity.y
       value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Ennemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

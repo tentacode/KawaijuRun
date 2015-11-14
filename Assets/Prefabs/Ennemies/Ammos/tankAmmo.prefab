@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11452234}
   m_Layer: 0
   m_Name: tankAmmo
-  m_TagString: Untagged
+  m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,6 +121,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: lifetime
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Ennemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

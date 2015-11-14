@@ -33,7 +33,7 @@ GameObject:
   - 4: {fileID: 406028}
   m_Layer: 0
   m_Name: SpawnPoint
-  m_TagString: Untagged
+  m_TagString: KaijuEye
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,7 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
-  cooldown: 0
+  jumpForce: 800
+  cooldown: .699999988
 --- !u!114 &11443752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,6 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb8359113454297bc1e4f87b2e3d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invulerabilityDelay: 1.5
 --- !u!212 &21252676
 SpriteRenderer:
   m_ObjectHideFlags: 1

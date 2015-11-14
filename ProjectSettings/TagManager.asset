@@ -11,6 +11,7 @@ TagManager:
   - KaijuEye
   - BulletMC
   - ennemy
+  - HeartContainer
   layers:
   - Default
   - TransparentFX
