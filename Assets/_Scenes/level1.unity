@@ -485,6 +485,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
+      propertyPath: scenario.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_LocalPosition.x
       value: 12.3199997
@@ -520,8 +524,27 @@ Prefab:
     - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: scenario
       value: 
-      objectReference: {fileID: 11455434, guid: cd88de0f16d72144c95aad369dffa2bc,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
+      propertyPath: scenario.Array.data[0].action
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
+      propertyPath: scenario.Array.data[0].delayForNextStep
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
+      propertyPath: scenario.Array.data[1].action
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
+      propertyPath: scenario.Array.data[1].delayForNextStep
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
+      propertyPath: scenario.Array.data[2].delayForNextStep
+      value: .200000003
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
   m_IsPrefabParent: 0
