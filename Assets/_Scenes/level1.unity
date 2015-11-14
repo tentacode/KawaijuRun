@@ -85,7 +85,7 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &214010045
+--- !u!1001 &205856280
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -122,10 +122,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433178, guid: 8137c3241dae75a489f908934560c558, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11401374, guid: 8137c3241dae75a489f908934560c558, type: 2}
-      propertyPath: walkSpeed
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -570,12 +566,12 @@ Prefab:
 --- !u!1 &1304878075 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 112424, guid: 8137c3241dae75a489f908934560c558, type: 2}
-  m_PrefabInternal: {fileID: 214010045}
+  m_PrefabInternal: {fileID: 205856280}
 --- !u!50 &1304878077 stripped
 Rigidbody2D:
   m_PrefabParentObject: {fileID: 5022068, guid: 8137c3241dae75a489f908934560c558,
     type: 2}
-  m_PrefabInternal: {fileID: 214010045}
+  m_PrefabInternal: {fileID: 205856280}
 --- !u!1 &1937888878
 GameObject:
   m_ObjectHideFlags: 0
