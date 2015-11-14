@@ -30,7 +30,7 @@ public class InputController : MonoBehaviour
 	// 		Debug.Log ("Tap bottom");
 	// 	}
 		
-	// 	if (IsTapUp()) {
+	// 	if (GetTapUpPosition().HasValue) {
 	// 		Debug.Log ("Tap up");
 	// 	}
 	// }

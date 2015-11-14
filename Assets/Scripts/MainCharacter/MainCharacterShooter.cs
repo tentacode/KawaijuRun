@@ -8,8 +8,9 @@ public class MainCharacterShooter : MonoBehaviour
     public Transform spawnPoint;
     public GameObject projectile;
     public float speed;
+    public float cooldown;
 	
-	void Update ()
+	void FixedUpdate ()
 	{
 		if (!CanShoot()) {
 			return;
@@ -36,10 +37,19 @@ public class MainCharacterShooter : MonoBehaviour
 		 GameObject projectileInstance = Instantiate(projectile, spawnPoint.position, Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
 		 Rigidbody2D rb = projectileInstance.GetComponent<Rigidbody2D>();
 		 rb.velocity = new Vector2(shootDirection.x * speed, shootDirection.y * speed);
+
+		 StartCoroutine(Cooldown());
 	}
 
 	bool CanShoot()
 	{
 		return mainCharacterController.getState() == MainCharacterController.States.Idle;
+	}
+
+	IEnumerator Cooldown()
+	{
+		yield return new WaitForSeconds(cooldown);
+
+		mainCharacterController.SetState(MainCharacterController.States.Idle);
 	}
 }
