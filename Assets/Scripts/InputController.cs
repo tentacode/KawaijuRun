@@ -3,20 +3,26 @@ using System.Collections;
 
 public class InputController : MonoBehaviour
 {
+	const string DIRECTION_UP = "up";
+	const string DIRECTION_DOWN = "down";
+	const string DIRECTION_RIGHT = "right";
+
 	public float tapScreenSplitRatio;
+
+	private Vector2 swipeBeginPosition;
 
 	void Update()
 	{
-		if (IsSlideUp()) {
-			Debug.Log ("Slide up");
+		if (IsSwipeUp()) {
+			Debug.Log ("Swipe up");
 		}
 
-		if (IsSlideDown()) {
-			Debug.Log ("Slide down");
+		if (IsSwipeDown()) {
+			Debug.Log ("Swipe down");
 		}
 
-		if (IsSlideRight()) {
-			Debug.Log ("Slide right");
+		if (IsSwipeRight()) {
+			Debug.Log ("Swipe right");
 		}
 		
 		if (IsTapDown()) {
@@ -28,40 +34,65 @@ public class InputController : MonoBehaviour
 		}
 	}
 	
-	bool IsSlideUp()
+	bool IsSwipeUp()
 	{
-		if (Input.GetKeyDown("up")) {
-			return true;
-		}
-		
-		return false;
+		return IsSwipe(DIRECTION_UP);
 	}
 	
-	bool IsSlideDown()
+	bool IsSwipeDown()
 	{
-		if (Input.GetKeyDown("down")) {
-			return true;
-		}
-		
-		return false;
+		return IsSwipe(DIRECTION_DOWN);
 	}
 	
-	bool IsSlideRight()
+	bool IsSwipeRight()
 	{
-		if (Input.GetKeyDown("right")) {
-			return true;
-		}
-		
-		return false;
+		return IsSwipe(DIRECTION_RIGHT);
 	}
 
+	bool IsSwipe(string direction)
+	{
+		if (Input.GetKeyDown(direction)) {
+			return true;
+		}
+
+		if (Input.touchCount == 0) {
+			return false;
+		}
+
+		var touch = Input.GetTouch(0);
+		if (touch.phase == TouchPhase.Began) {
+			swipeBeginPosition = touch.position;
+			return false;
+		}
+
+		if (touch.phase == TouchPhase.Ended) {
+			Vector2 deltaPosition = touch.position - swipeBeginPosition;
+			var angle = Mathf.Atan2(deltaPosition.y, deltaPosition.x) * Mathf.Rad2Deg;
+
+			if (direction == DIRECTION_UP && angle < 135 && angle >= 45) {
+				return true;
+			}
+
+			if (direction == DIRECTION_RIGHT && angle < 45 && angle >= -45) {
+				return true;
+			}
+
+			if (direction == DIRECTION_DOWN && angle < -45 && angle >= -135) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
 	bool IsTapDown()
 	{
 		Vector2 position;
 		if (Input.GetButtonDown("Fire1")) {
 			position = Input.mousePosition;
-
-			return this.isPositionBottom(position);
+			float splitPosition = Screen.height * tapScreenSplitRatio;
+			
+			return position.y < splitPosition;
 		}
 		
 		return false;
@@ -72,24 +103,11 @@ public class InputController : MonoBehaviour
 		Vector2 position;
 		if (Input.GetButtonDown("Fire1")) {
 			position = Input.mousePosition;
+			float splitPosition = Screen.height * tapScreenSplitRatio;
 			
-			return this.isPositionTop(position);
+			return position.y >= splitPosition;
 		}
 		
 		return false;
-	}
-	
-	bool isPositionBottom(Vector2 position)
-	{
-		float splitPosition = Screen.height * tapScreenSplitRatio;
-
-		return position.y < splitPosition;
-	}
-	
-	bool isPositionTop(Vector2 position)
-	{
-		float splitPosition = Screen.height * tapScreenSplitRatio;
-		
-		return position.y >= splitPosition;
 	}
 }
