@@ -8,6 +8,8 @@ public class MainCharacterMover : MonoBehaviour
     private float currentSpeed { get; set; }
     private Rigidbody2D rb;
 
+    private int health = 3;
+
 	void Start () 
     {
         rb = GetComponent<Rigidbody2D>();
