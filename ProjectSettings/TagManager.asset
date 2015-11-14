@@ -7,6 +7,7 @@ TagManager:
   - SpawnerTrigger
   - Ground
   - ennemy
+  - background
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - 
   - Player
   - Ennemy
-  - 
+  - Background
   - 
   - 
   - 
