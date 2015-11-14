@@ -3,7 +3,7 @@ using System.Collections;
 
 public class InputController : MonoBehaviour
 {
-	public float tapScreenSplitRatio = 0.66f;
+	public float tapScreenSplitRatio;
 
 	void Update()
 	{
@@ -54,14 +54,14 @@ public class InputController : MonoBehaviour
 		
 		return false;
 	}
-	
+
 	bool IsTapDown()
 	{
+		Vector2 position;
 		if (Input.GetButtonDown("Fire1")) {
+			position = Input.mousePosition;
 
-			Debug.Log(Input.mousePosition);
-
-			return true;
+			return this.isPositionBottom(position);
 		}
 		
 		return false;
@@ -69,6 +69,27 @@ public class InputController : MonoBehaviour
 	
 	bool IsTapUp()
 	{
+		Vector2 position;
+		if (Input.GetButtonDown("Fire1")) {
+			position = Input.mousePosition;
+			
+			return this.isPositionTop(position);
+		}
+		
 		return false;
+	}
+	
+	bool isPositionBottom(Vector2 position)
+	{
+		float splitPosition = Screen.height * tapScreenSplitRatio;
+
+		return position.y < splitPosition;
+	}
+	
+	bool isPositionTop(Vector2 position)
+	{
+		float splitPosition = Screen.height * tapScreenSplitRatio;
+		
+		return position.y >= splitPosition;
 	}
 }
