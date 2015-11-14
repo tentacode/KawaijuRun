@@ -25,7 +25,8 @@ public class EnnemyController : MonoBehaviour
     private Rigidbody2D rb;
     private int stepIndex = 0;
     private bool isTriggered = false;
-    public bool hasPassTrigger = false;
+    [SerializeField]
+    private bool isMoving = false;
 
     // Use this for initialization
     void Start ()
@@ -33,12 +34,19 @@ public class EnnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 	}
 
+    void FixedUpdate()
+    {
+        if(isMoving)
+        {
+            rb.velocity = new Vector2(-1f * movingSpeed, 0f);
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "SpawnerTrigger")
         {
             rb.isKinematic = isKinematic;
-            hasPassTrigger = true;
             BeginBehavior();
         }
 
@@ -55,7 +63,6 @@ public class EnnemyController : MonoBehaviour
         }
 
         isTriggered = true;
-        Debug.Log("Begin behavior");
         StartCoroutine(ExecuteStep());
     }
 
@@ -90,21 +97,18 @@ public class EnnemyController : MonoBehaviour
 
     void Shoot()
     {
-        Debug.Log("shoot");
         Instantiate(ammo, gameObject.transform.position, Quaternion.identity);
         ammo.GetComponent<Ammo>().Launch();
     }
 
     void Move()
     {
-        Debug.Log("move");
-        rb.velocity = new Vector2(-1f * movingSpeed, 0f);
+        isMoving = true;
     }
 
     void Stop()
     {
-        Debug.Log("stop");
-        rb.velocity = new Vector2(0f, 0f);
+        isMoving = false;
     }
 
     void Die()

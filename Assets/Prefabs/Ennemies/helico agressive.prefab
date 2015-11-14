@@ -29,7 +29,7 @@ GameObject:
   - 58: {fileID: 5801474}
   - 114: {fileID: 11443374}
   m_Layer: 0
-  m_Name: helico
+  m_Name: helico agressive
   m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   ammo: {fileID: 193086, guid: ad68dfa919327834fb52d209fcd7fb17, type: 2}
   movingSpeed: 5
   isKinematic: 1
-  hasPassTrigger: 0
+  isMoving: 0
 --- !u!212 &21205958
 SpriteRenderer:
   m_ObjectHideFlags: 1
