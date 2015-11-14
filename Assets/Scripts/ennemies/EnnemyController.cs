@@ -70,7 +70,6 @@ public class EnnemyController : MonoBehaviour
     {
         ScenarioStep step = scenario[stepIndex];
 
-        Debug.Log("set action to " + step.action);
         switch (step.action)
         {
             case ScenarioStep.EnnemyActions.move:

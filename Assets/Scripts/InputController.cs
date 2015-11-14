@@ -44,6 +44,11 @@ public class InputController : MonoBehaviour
 		// }
 	}
 	
+	public bool IsTap()
+	{
+		return Input.GetButtonUp("Fire1");
+	}
+	
 	public bool IsSwipeUp()
 	{
 		return IsSwipe(DIRECTION_UP);

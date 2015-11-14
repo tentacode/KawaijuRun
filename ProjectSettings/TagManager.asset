@@ -3,15 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - SpawnerTrigger
-  - Ground
-  - Ennemy
-  - Background
-  - KaijuEye
-  - BulletMC
-  - ennemy
-  - KillerTrigger
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -21,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - Player
-  - Ennemy
-  - Background
+  - 
+  - 
+  - 
   - 
   - 
   - 
