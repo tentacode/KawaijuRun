@@ -7,6 +7,7 @@ public class MainCharacterShooter : MonoBehaviour
     public InputController inputController;
     public Transform spawnPoint;
     public GameObject projectile;
+    public float speed;
 	
 	void Update ()
 	{
@@ -25,6 +26,16 @@ public class MainCharacterShooter : MonoBehaviour
 	void Shoot(Vector2 tapPosition)
 	{
 		mainCharacterController.SetState(MainCharacterController.States.Shooting);
+
+		 Vector3 shootDirection;
+		 shootDirection = tapPosition;
+		 shootDirection.z = 0.0f;
+		 shootDirection = Camera.main.ScreenToWorldPoint(shootDirection);
+		 shootDirection = shootDirection - spawnPoint.position;
+
+		 GameObject projectileInstance = Instantiate(projectile, spawnPoint.position, Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
+		 Rigidbody2D rb = projectileInstance.GetComponent<Rigidbody2D>();
+		 rb.velocity = new Vector2(shootDirection.x * speed, shootDirection.y * speed);
 	}
 
 	bool CanShoot()

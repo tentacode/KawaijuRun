@@ -98,7 +98,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433178, guid: 8137c3241dae75a489f908934560c558, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.3599999
+      value: -2.3499999
       objectReference: {fileID: 0}
     - target: {fileID: 433178, guid: 8137c3241dae75a489f908934560c558, type: 2}
       propertyPath: m_LocalPosition.z
@@ -659,6 +659,7 @@ MonoBehaviour:
   inputController: {fileID: 2132428168}
   spawnPoint: {fileID: 1333542272}
   projectile: {fileID: 177584, guid: 4f11b4ecf1ada1f409c60e8aea9c39d4, type: 2}
+  speed: 5
 --- !u!114 &1304878082
 MonoBehaviour:
   m_ObjectHideFlags: 0

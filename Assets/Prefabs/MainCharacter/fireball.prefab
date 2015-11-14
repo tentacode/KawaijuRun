@@ -11,7 +11,6 @@ GameObject:
   - 212: {fileID: 21234786}
   - 58: {fileID: 5886330}
   - 50: {fileID: 5023614}
-  - 114: {fileID: 11432080}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -25,7 +24,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 177584}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -.211708233, y: .674670041, z: .211708233, w: .674670041}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -60,18 +59,6 @@ CircleCollider2D:
   m_Offset: {x: -.180000007, y: 0}
   serializedVersion: 2
   m_Radius: .338075578
---- !u!114 &11432080
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16c5676d5cf7f409a8d2073f2faced12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
 --- !u!212 &21234786
 SpriteRenderer:
   m_ObjectHideFlags: 1
