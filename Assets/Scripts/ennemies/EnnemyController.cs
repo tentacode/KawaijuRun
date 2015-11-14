@@ -20,10 +20,12 @@ public class EnnemyController : MonoBehaviour
     public GameObject ammo;
 
     public float movingSpeed;
+    public bool isKinematic;
 
     private Rigidbody2D rb;
     private int stepIndex = 0;
     private bool isTriggered = false;
+    public bool hasPassTrigger = false;
 
     // Use this for initialization
     void Start ()
@@ -35,11 +37,12 @@ public class EnnemyController : MonoBehaviour
     {
         if (other.tag == "SpawnerTrigger")
         {
-            GetComponent<Rigidbody2D>().isKinematic = false;
+            rb.isKinematic = isKinematic;
+            hasPassTrigger = true;
             BeginBehavior();
         }
 
-        if (other.tag == "Player")
+        if (other.tag == "Player" || other.tag == "BulletMC")
         {
             Die();
         }

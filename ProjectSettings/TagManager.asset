@@ -6,8 +6,11 @@ TagManager:
   tags:
   - SpawnerTrigger
   - Ground
+  - Ennemy
+  - Background
+  - KaijuEye
+  - BulletMC
   - ennemy
-  - background
   layers:
   - Default
   - TransparentFX
