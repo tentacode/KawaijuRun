@@ -11,10 +11,11 @@ GameObject:
   - 212: {fileID: 21252676}
   - 61: {fileID: 6147976}
   - 50: {fileID: 5022068}
+  - 95: {fileID: 9571950}
   - 114: {fileID: 11401374}
   - 114: {fileID: 11443752}
   - 114: {fileID: 11458084}
-  - 95: {fileID: 9571950}
+  - 114: {fileID: 11405512}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
@@ -44,7 +45,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149190}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .899999976, y: .899999976, z: 0}
+  m_LocalPosition: {x: .829999983, y: .930000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 433178}
@@ -120,6 +121,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 5
+--- !u!114 &11405512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4de70199ad37a407594895583366c47b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCharacterController: {fileID: 11458084}
+  inputController: {fileID: 0}
+  cooldown: 0
 --- !u!114 &11443752
 MonoBehaviour:
   m_ObjectHideFlags: 1

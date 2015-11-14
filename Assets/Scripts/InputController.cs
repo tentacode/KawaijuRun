@@ -76,8 +76,6 @@ public class InputController : MonoBehaviour
 	{
 		Vector2 position;
 		if (Input.GetButtonUp("Fire1") && null == GetSlidingDirection()) {
-
-
 			position = Input.mousePosition;
 
 			//cannot tap bellow screen
