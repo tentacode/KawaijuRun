@@ -13,9 +13,25 @@ GameObject:
   - 50: {fileID: 5022068}
   - 114: {fileID: 11401374}
   - 114: {fileID: 11443752}
+  - 114: {fileID: 11468720}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &115802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 457222}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +45,21 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.28000021, y: -2.3900001, z: -3.4000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 457222}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &457222
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .870000005, y: .939999998, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 433178}
   m_RootOrder: 0
 --- !u!50 &5022068
 Rigidbody2D:
@@ -72,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9600ce370d9815845934f581148eed91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
+  walkSpeed: 1
 --- !u!114 &11443752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -84,12 +113,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97802f80039e44972bb9b25c2ed44dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCharacterController: {fileID: 0}
+  mainCharacterController: {fileID: 11468720}
   inputController: {fileID: 0}
-  spawnPoint: {fileID: 0}
-  projectile: {fileID: 0}
-  speed: 0
-  cooldown: 0
+  spawnPoint: {fileID: 457222}
+  projectile: {fileID: 177584, guid: 4f11b4ecf1ada1f409c60e8aea9c39d4, type: 2}
+  speed: 4
+  cooldown: .5
+--- !u!114 &11468720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ecb8359113454297bc1e4f87b2e3d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21252676
 SpriteRenderer:
   m_ObjectHideFlags: 1

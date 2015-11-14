@@ -125,10 +125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb0a16f81e8d8d499f7ce02cbaed97d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenario: {fileID: 0}
+  scenario: []
   shootPoint: {fileID: 153236}
   ammo: {fileID: 193086, guid: 187c8dedb313e874f9fc945ae4e3d243, type: 2}
   movingSpeed: 5
+  stepIndex: 0
 --- !u!212 &21232172
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -161,7 +162,12 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: scenario
+      value: 
+      objectReference: {fileID: 11455434, guid: cd88de0f16d72144c95aad369dffa2bc,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 183024}
