@@ -122,7 +122,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433178, guid: 8137c3241dae75a489f908934560c558, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11405512, guid: 8137c3241dae75a489f908934560c558, type: 2}
       propertyPath: inputController
@@ -139,6 +139,10 @@ Prefab:
     - target: {fileID: 11405512, guid: 8137c3241dae75a489f908934560c558, type: 2}
       propertyPath: jumpForce
       value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 149190, guid: 8137c3241dae75a489f908934560c558, type: 2}
+      propertyPath: m_TagString
+      value: KaijuEye
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8137c3241dae75a489f908934560c558, type: 2}
@@ -405,11 +409,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 452242, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 12.3199997
+      value: 10.3199997
       objectReference: {fileID: 0}
     - target: {fileID: 452242, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.83999991
+      value: 3.25999999
       objectReference: {fileID: 0}
     - target: {fileID: 452242, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
       propertyPath: m_LocalPosition.z
@@ -434,10 +438,6 @@ Prefab:
     - target: {fileID: 452242, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 124590, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
-      propertyPath: m_Name
-      value: helico
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
@@ -818,13 +818,9 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 12.3199997
+      value: -2.31999993
       objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_LocalPosition.y
@@ -852,31 +848,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[0].action
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[0].delayForNextStep
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[1].action
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[1].delayForNextStep
-      value: .200000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
-      propertyPath: scenario.Array.data[2].delayForNextStep
-      value: .200000003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
