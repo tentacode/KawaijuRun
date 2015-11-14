@@ -8,13 +8,11 @@ public class HelicoAmmo : Ammo
     public Vector2 launchVelocity;
 
     private bool isInEyeLine = false;
-    private float timeLaunched;
     private GameObject eyePosition;
 
     public override void Launch()
     {
         eyePosition = GameObject.FindGameObjectsWithTag("KaijuEye")[0];
-        timeLaunched = Time.time;
         fall();
     }
 
