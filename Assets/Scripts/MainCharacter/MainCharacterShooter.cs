@@ -28,17 +28,22 @@ public class MainCharacterShooter : MonoBehaviour
 	{
 		mainCharacterController.SetState(MainCharacterController.States.Shooting);
 
-		 Vector3 shootDirection;
-		 shootDirection = tapPosition;
-		 shootDirection.z = 0.0f;
-		 shootDirection = Camera.main.ScreenToWorldPoint(shootDirection);
-		 shootDirection = shootDirection - spawnPoint.position;
+		Vector3 shootDirection;
 
-		 GameObject projectileInstance = Instantiate(projectile, spawnPoint.position, Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
-		 Rigidbody2D rb = projectileInstance.GetComponent<Rigidbody2D>();
-		 rb.velocity = new Vector2(shootDirection.x * speed, shootDirection.y * speed);
+		shootDirection = tapPosition;
+		shootDirection.z = 0.0f;
+		shootDirection = Camera.main.ScreenToWorldPoint(shootDirection);
+		float distance = Vector2.Distance(shootDirection, spawnPoint.position);
+		shootDirection = shootDirection - spawnPoint.position;
+		Debug.Log(distance);
 
-		 StartCoroutine(Cooldown());
+		GameObject projectileInstance = Instantiate(projectile, spawnPoint.position, Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
+		Rigidbody2D rb = projectileInstance.GetComponent<Rigidbody2D>();
+
+		float constantSpeed = speed;
+		rb.velocity = new Vector2(shootDirection.x, shootDirection.y);
+
+		StartCoroutine(Cooldown());
 	}
 
 	bool CanShoot()

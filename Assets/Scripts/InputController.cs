@@ -12,28 +12,35 @@ public class InputController : MonoBehaviour
 
 	private Vector2 swipeBeginPosition;
 
-	// void Update()
-	// {
-	// 	if (IsSwipeUp()) {
-	// 		Debug.Log ("Swipe up");
-	// 	}
+	void Update()
+	{
+		if (Input.touchCount > 0) {
+			var touch = Input.GetTouch(0);
+			if (touch.phase == TouchPhase.Began) {
+				swipeBeginPosition = touch.position;
+			}
+		}
 
-	// 	if (IsSwipeDown()) {
-	// 		Debug.Log ("Swipe down");
-	// 	}
+		// if (IsSwipeUp()) {
+		// 	Debug.Log ("Swipe up");
+		// }
 
-	// 	if (IsSwipeRight()) {
-	// 		Debug.Log ("Swipe right");
-	// 	}
+		// if (IsSwipeDown()) {
+		// 	Debug.Log ("Swipe down");
+		// }
+
+		// if (IsSwipeRight()) {
+		// 	Debug.Log ("Swipe right");
+		// }
 		
-	// 	if (IsTapBottom()) {
-	// 		Debug.Log ("Tap bottom");
-	// 	}
+		// if (IsTapBottom()) {
+		// 	Debug.Log ("Tap bottom");
+		// }
 		
-	// 	if (GetTapUpPosition().HasValue) {
-	// 		Debug.Log ("Tap up");
-	// 	}
-	// }
+		// if (GetTapUpPosition().HasValue) {
+		// 	Debug.Log ("Tap up");
+		// }
+	}
 	
 	public bool IsSwipeUp()
 	{
@@ -94,30 +101,28 @@ public class InputController : MonoBehaviour
 		}
 
 		var touch = Input.GetTouch(0);
-		if (touch.phase == TouchPhase.Began) {
-			swipeBeginPosition = touch.position;
+
+		if (touch.phase != TouchPhase.Ended) {
 			return null;
 		}
 
-		if (touch.phase == TouchPhase.Ended) {
-			Vector2 deltaPosition = touch.position - swipeBeginPosition;
-			if (deltaPosition.magnitude < mininmumSwipeMagnitude) {
-				return null;
-			}
+		Vector2 deltaPosition = touch.position - swipeBeginPosition;
+		if (deltaPosition.magnitude < mininmumSwipeMagnitude) {
+			return null;
+		}
 
-			var angle = Mathf.Atan2(deltaPosition.y, deltaPosition.x) * Mathf.Rad2Deg;
+		var angle = Mathf.Atan2(deltaPosition.y, deltaPosition.x) * Mathf.Rad2Deg;
 
-			if (angle < 135 && angle >= 45) {
-				return DIRECTION_UP;
-			}
+		if (angle < 135 && angle >= 45) {
+			return DIRECTION_UP;
+		}
 
-			if (angle < 45 && angle >= -45) {
-				return DIRECTION_RIGHT;
-			}
+		if (angle < 45 && angle >= -45) {
+			return DIRECTION_RIGHT;
+		}
 
-			if (angle < -45 && angle >= -135) {
-				return DIRECTION_DOWN;
-			}
+		if (angle < -45 && angle >= -135) {
+			return DIRECTION_DOWN;
 		}
 		
 		return null;
