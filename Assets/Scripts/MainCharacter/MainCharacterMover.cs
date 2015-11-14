@@ -17,6 +17,12 @@ public class MainCharacterMover : MonoBehaviour
 	
 	void Update ()
     {
+        MainCharacterController.States state = GetComponent<MainCharacterController>().getState();
+        if (state == MainCharacterController.States.Dead || state == MainCharacterController.States.Start) {
+            return;
+        }
+
+
         Walk();
         currentSpeed = rb.velocity.x;
 	}

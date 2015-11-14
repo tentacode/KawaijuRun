@@ -4,11 +4,11 @@ using System.Collections;
 
 public class MainCharacterController : MonoBehaviour
 {
-    public enum States {Idle, Shooting, Jumping, Dead};
+    public enum States {Idle, Shooting, Jumping, Dead, Start};
     public float invulerabilityDelay;
     public float gameOverDelay;
 
-    private States state = States.Idle;
+    private States state = States.Start;
     private int heart = 3;
     private bool invulnerable = false;
 
