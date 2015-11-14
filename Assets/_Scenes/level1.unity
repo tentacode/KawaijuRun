@@ -287,3 +287,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tapScreenSplitRatio: .330000013
+  mininmumSwipeMagnitude: 30

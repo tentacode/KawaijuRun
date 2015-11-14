@@ -8,6 +8,7 @@ public class InputController : MonoBehaviour
 	const string DIRECTION_RIGHT = "right";
 
 	public float tapScreenSplitRatio;
+	public float mininmumSwipeMagnitude;
 
 	private Vector2 swipeBeginPosition;
 
@@ -25,8 +26,8 @@ public class InputController : MonoBehaviour
 			Debug.Log ("Swipe right");
 		}
 		
-		if (IsTapDown()) {
-			Debug.Log ("Tap down");
+		if (IsTapBottom()) {
+			Debug.Log ("Tap bottom");
 		}
 		
 		if (IsTapUp()) {
@@ -55,40 +56,49 @@ public class InputController : MonoBehaviour
 			return true;
 		}
 
+		return direction == GetSlidingDirection();
+	}
+
+	string GetSlidingDirection()
+	{
 		if (Input.touchCount == 0) {
-			return false;
+			return null;
 		}
 
 		var touch = Input.GetTouch(0);
 		if (touch.phase == TouchPhase.Began) {
 			swipeBeginPosition = touch.position;
-			return false;
+			return null;
 		}
 
 		if (touch.phase == TouchPhase.Ended) {
 			Vector2 deltaPosition = touch.position - swipeBeginPosition;
+			if (deltaPosition.magnitude < mininmumSwipeMagnitude) {
+				return null;
+			}
+
 			var angle = Mathf.Atan2(deltaPosition.y, deltaPosition.x) * Mathf.Rad2Deg;
 
-			if (direction == DIRECTION_UP && angle < 135 && angle >= 45) {
-				return true;
+			if (angle < 135 && angle >= 45) {
+				return DIRECTION_UP;
 			}
 
-			if (direction == DIRECTION_RIGHT && angle < 45 && angle >= -45) {
-				return true;
+			if (angle < 45 && angle >= -45) {
+				return DIRECTION_RIGHT;
 			}
 
-			if (direction == DIRECTION_DOWN && angle < -45 && angle >= -135) {
-				return true;
+			if (angle < -45 && angle >= -135) {
+				return DIRECTION_DOWN;
 			}
 		}
 		
-		return false;
+		return null;
 	}
 	
-	bool IsTapDown()
+	bool IsTapBottom()
 	{
 		Vector2 position;
-		if (Input.GetButtonDown("Fire1")) {
+		if (Input.GetButtonUp("Fire1") && null == GetSlidingDirection()) {
 			position = Input.mousePosition;
 			float splitPosition = Screen.height * tapScreenSplitRatio;
 			
@@ -101,7 +111,7 @@ public class InputController : MonoBehaviour
 	bool IsTapUp()
 	{
 		Vector2 position;
-		if (Input.GetButtonDown("Fire1")) {
+		if (Input.GetButtonUp("Fire1") && null == GetSlidingDirection()) {
 			position = Input.mousePosition;
 			float splitPosition = Screen.height * tapScreenSplitRatio;
 			
