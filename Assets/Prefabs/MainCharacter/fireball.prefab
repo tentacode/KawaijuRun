@@ -11,8 +11,9 @@ GameObject:
   - 212: {fileID: 21234786}
   - 58: {fileID: 5886330}
   - 50: {fileID: 5023614}
+  - 114: {fileID: 11412840}
   m_Layer: 0
-  m_Name: fireball
+  m_Name: Fireball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,6 +60,18 @@ CircleCollider2D:
   m_Offset: {x: -.180000007, y: 0}
   serializedVersion: 2
   m_Radius: .338075578
+--- !u!114 &11412840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e481a861fcd9c4e43963ddfc2a1ff7df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 3
 --- !u!212 &21234786
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -99,6 +112,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: speed
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: lifetime
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
