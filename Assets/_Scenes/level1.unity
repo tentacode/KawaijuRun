@@ -412,4 +412,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4e9c5378622a46c2839b7bdd5fd5377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tapScreenSplitRatio: .660000026
+  tapScreenSplitRatio: .330000013
