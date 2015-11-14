@@ -7,6 +7,8 @@ public class InputController : MonoBehaviour
 	const string DIRECTION_DOWN = "down";
 	const string DIRECTION_RIGHT = "right";
 
+	public Camera mainCamera;
+	public Transform spawnPoint;
 	public float tapScreenSplitRatio;
 	public float mininmumSwipeMagnitude;
 
@@ -74,12 +76,23 @@ public class InputController : MonoBehaviour
 	{
 		Vector2 position;
 		if (Input.GetButtonUp("Fire1") && null == GetSlidingDirection()) {
+
+
 			position = Input.mousePosition;
+
+			//cannot tap bellow screen
 			float splitPosition = Screen.height * tapScreenSplitRatio;
-			
-			if (position.y >= splitPosition) {
-				return position;
+			if (position.y < splitPosition) {
+				return null;
 			}
+
+			//cannot tap behind spawnPoint
+			Vector3 eyeScreenPosition = mainCamera.WorldToScreenPoint(spawnPoint.position);
+			if (position.x < eyeScreenPosition.x) {
+				return null;
+			}
+				
+			return position;
 		}
 		
 		return null;
