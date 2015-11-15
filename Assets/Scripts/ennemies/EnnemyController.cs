@@ -74,6 +74,10 @@ public class EnnemyController : MonoBehaviour
 
     IEnumerator ExecuteStep()
     {
+        if (scenario.Count == 0) {
+            return false;
+        }
+
         ScenarioStep step = scenario[stepIndex];
 
         switch (step.action)

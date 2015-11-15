@@ -31,7 +31,7 @@ public class MainCharacterController : MonoBehaviour
         if (other.tag == "Ennemy")
         {
             var ennemyController = other.gameObject.GetComponent<EnnemyController>();
-            if (state == States.Crushing && ennemyController.ennemyType == EnnemyController.EnnemyTypes.Tank) {
+            if (ennemyController && state == States.Crushing && ennemyController.ennemyType == EnnemyController.EnnemyTypes.Tank) {
                 return;
             }
 
