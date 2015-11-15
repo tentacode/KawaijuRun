@@ -119,18 +119,29 @@ public class EnnemyController : MonoBehaviour
             animator.SetTrigger("shoot");
         }
 
-        Instantiate(ammo, gameObject.transform.position, Quaternion.identity);
+        Instantiate(ammo, shootPoint.transform.position, Quaternion.identity);
         ammo.GetComponent<Ammo>().Launch();
     }
 
     void Move()
     {
-        isMoving = true;
+        if(!isMoving)
+        {
+            isMoving = true;
+            animator.SetBool("move", true);
+            animator.SetTrigger("moving");
+        }
+        
     }
 
     void Stop()
     {
-        isMoving = false;
+        if (isMoving)
+        {
+            isMoving = false;
+            animator.SetBool("move", false);
+            animator.SetTrigger("stopMoving");
+        }
     }
 
     void Die()
