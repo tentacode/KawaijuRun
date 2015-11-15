@@ -153,7 +153,7 @@ MonoBehaviour:
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
   cooldown: 1
-  crouchDelta: {x: 2, y: -2}
+  crouchDelta: {x: 1.20000005, y: -2}
 --- !u!114 &11443752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -223,7 +223,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 66c2e10e55580e943b13d70c2b532359, type: 3}
+  m_Sprite: {fileID: 21300144, guid: 2a47a51b24f8cd9418182e646eff2cc3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

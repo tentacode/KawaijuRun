@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.1899996, y: -3.57999992, z: .041015625}
+  m_LocalPosition: {x: 10.0500002, y: -3.47000003, z: .041015625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 461034}
@@ -100,9 +100,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .320307732, y: -.490325928}
+  m_Offset: {x: .320306778, y: -.52540946}
   serializedVersion: 2
-  m_Size: {x: 1.82622814, y: 1.44070625}
+  m_Size: {x: 1.22204161, y: 1.31039822}
 --- !u!95 &9526972
 Animator:
   serializedVersion: 3
@@ -132,9 +132,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenario:
-  - action: 2
-    delayForNextStep: .5
   - action: 0
+    delayForNextStep: 1
+  - action: 1
     delayForNextStep: .5
   shootPoint: {fileID: 153236}
   ammo: {fileID: 193086, guid: 187c8dedb313e874f9fc945ae4e3d243, type: 2}

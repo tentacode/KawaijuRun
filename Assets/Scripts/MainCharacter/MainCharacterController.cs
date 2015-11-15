@@ -6,16 +6,26 @@ public class MainCharacterController : MonoBehaviour
 {
     public enum States {Idle, Shooting, Jumping, Dead, Start, Crushing, Crouching};
     public float invulerabilityDelay;
+    public float hitStopDelay;
     public float gameOverDelay;
 
     private States state = States.Start;
     public int heart = 3;
     private bool invulnerable = false;
+    private Animator animator;
+    private bool crushRight = true;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public void SetState(States newState)
     {
         Debug.Log("New state: " + newState);
         state = newState;
+
+        switchAnim();
     }
 
     public States getState()
@@ -57,7 +67,7 @@ public class MainCharacterController : MonoBehaviour
         }
 
         if (heart == 0) {
-            state = States.Dead;
+            SetState(States.Dead);
             GetComponent<MainCharacterMover>().walkSpeed = 0.0f;
             GameObject gameOverUi = GameObject.FindGameObjectsWithTag("GameOver")[0];
             yield return new WaitForSeconds(gameOverDelay);
@@ -65,8 +75,55 @@ public class MainCharacterController : MonoBehaviour
             yield return true;
         }
 
+        animator.SetTrigger("hit");
         invulnerable = true;
+
+        float lastWalkSpeed = GetComponent<MainCharacterMover>().walkSpeed;
+        GetComponent<MainCharacterMover>().walkSpeed = 0.0f;
+        yield return new WaitForSeconds(hitStopDelay);
+        GetComponent<MainCharacterMover>().walkSpeed = lastWalkSpeed;
+
         yield return new WaitForSeconds(invulerabilityDelay);
         invulnerable = false;
+    }
+
+    public void switchAnim()
+    {
+        switch(state)
+        {
+            case States.Idle:
+                break;
+
+            case States.Jumping:
+                animator.SetTrigger("jump");
+                break;
+
+            case States.Crushing:
+                if(crushRight)
+                {
+                    animator.SetTrigger("crunchRight");
+                }
+                else
+                {
+                    animator.SetTrigger("crunchLeft");
+                }
+                crushRight = !crushRight;
+                break;
+
+            case States.Crouching:
+                animator.SetTrigger("crouch");
+                break;
+
+            case States.Shooting:
+                animator.SetTrigger("fire");
+                break;
+
+            case States.Dead:
+                animator.SetTrigger("die");
+                break;
+
+            default:
+                break;
+        }
     }
 }
