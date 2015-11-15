@@ -52,6 +52,9 @@ public class EnnemyController : MonoBehaviour
 
         if (other.tag == "Player" || other.tag == "BulletMC")
         {
+            if (other.tag == "BulletMC") {
+                Destroy(other.gameObject);
+            }
             Die();
         }
     }
