@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 461034}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: firePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 58: {fileID: 5833998}
   - 114: {fileID: 11486130}
   - 95: {fileID: 9526972}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tank
   m_TagString: Ennemy
   m_Icon: {fileID: 0}
@@ -201,6 +201,10 @@ Prefab:
       propertyPath: explosion
       value: 
       objectReference: {fileID: 102358, guid: 0cd3fc7060441fd40a1488a4d0cfacbd, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 183024}

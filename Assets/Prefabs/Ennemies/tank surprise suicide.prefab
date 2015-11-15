@@ -14,7 +14,7 @@ GameObject:
   - 58: {fileID: 5899016}
   - 114: {fileID: 11435772}
   - 95: {fileID: 9527432}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tank surprise suicide
   m_TagString: Ennemy
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 471270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: firePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,6 +196,10 @@ Prefab:
       propertyPath: explosion
       value: 
       objectReference: {fileID: 102358, guid: 0cd3fc7060441fd40a1488a4d0cfacbd, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 131494}

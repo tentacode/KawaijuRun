@@ -13,7 +13,7 @@ GameObject:
   - 50: {fileID: 5092144}
   - 114: {fileID: 11452234}
   - 114: {fileID: 11447410}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: helico Ammo
   m_TagString: Ennemy
   m_Icon: {fileID: 0}
@@ -162,6 +162,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300002, guid: 99452947d4bd38a4381e8c7c30cb582f,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193086}
