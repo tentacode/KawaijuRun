@@ -22,7 +22,10 @@ public class MainCharacterController : MonoBehaviour
 
     public void SetState(States newState)
     {
-        Debug.Log("New state: " + newState);
+        if (newState == States.Dead) {
+            return;
+        }
+
         state = newState;
 
         switchAnim();
