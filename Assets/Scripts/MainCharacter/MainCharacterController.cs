@@ -22,7 +22,7 @@ public class MainCharacterController : MonoBehaviour
 
     public void SetState(States newState)
     {
-        if (newState == States.Dead) {
+        if (state == States.Dead) {
             return;
         }
 
