@@ -38,8 +38,11 @@ public class MainCharacterController : MonoBehaviour
     {
         heart--;
 
-        GameObject heartUi = GameObject.FindGameObjectsWithTag("Heart")[0];
-        heartUi.SetActive(false);
+        var heartUis = GameObject.FindGameObjectsWithTag("Heart");
+        if (heartUis.Length > 0) {
+            GameObject heartUi = heartUis[0];
+            heartUi.SetActive(false);
+        }
 
         if (heart == 0) {
             state = States.Dead;

@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
 
         setAllBackgroundLaunchPosition();
 
-        splashScreen.SetActive(false); To FIX
+        splashScreen.SetActive(false);
         mainUI.SetActive(true);
     }
 
