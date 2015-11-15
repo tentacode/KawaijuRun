@@ -148,7 +148,7 @@ public class EnnemyController : MonoBehaviour
 
     void Die()
     {
-        GameObject explosionInstance = Instantiate(explosion, rb.transform.position, Quaternion.identity) as GameObject;
+        GameObject explosionInstance = Instantiate(explosion, rb.transform.position + Vector3.back * 5f, explosion.transform.rotation) as GameObject;
         Destroy(explosionInstance, 3.0f);
 
         gameObject.SetActive(false);

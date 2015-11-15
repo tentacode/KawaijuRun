@@ -142,7 +142,7 @@ MonoBehaviour:
   isKinematic: 0
   ennemyType: 0
   ennemyScore: 10
-  explosion: {fileID: 102358, guid: 5c7197c3704a31642950491ea52751c8, type: 2}
+  explosion: {fileID: 102358, guid: 0cd3fc7060441fd40a1488a4d0cfacbd, type: 2}
 --- !u!212 &21279062
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -195,7 +195,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: explosion
       value: 
-      objectReference: {fileID: 102358, guid: 5c7197c3704a31642950491ea52751c8, type: 2}
+      objectReference: {fileID: 102358, guid: 0cd3fc7060441fd40a1488a4d0cfacbd, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 131494}
