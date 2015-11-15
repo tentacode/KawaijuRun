@@ -28,13 +28,14 @@ public class EnnemyController : MonoBehaviour
     private Rigidbody2D rb;
     private int stepIndex = 0;
     private bool isTriggered = false;
-    [SerializeField]
     private bool isMoving = false;
+    private Animator animator;
 
     // Use this for initialization
     void Start ()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 	}
 
     void FixedUpdate()
@@ -75,7 +76,7 @@ public class EnnemyController : MonoBehaviour
     IEnumerator ExecuteStep()
     {
         if (scenario.Count == 0) {
-            return false;
+            yield return false;
         }
 
         ScenarioStep step = scenario[stepIndex];
@@ -106,6 +107,12 @@ public class EnnemyController : MonoBehaviour
 
     public virtual void Shoot()
     {
+        if(animator != null)
+        {
+            Debug.Log("bukkake");
+            animator.SetTrigger("shoot");
+        }
+
         Instantiate(ammo, gameObject.transform.position, Quaternion.identity);
         ammo.GetComponent<Ammo>().Launch();
     }
