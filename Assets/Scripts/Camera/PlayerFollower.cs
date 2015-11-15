@@ -3,8 +3,14 @@ using System.Collections;
 
 public class PlayerFollower : MonoBehaviour
 {
-    public GameObject player; // reference to the player
     public Vector2 defaultPosition;
+
+    private GameObject player; // reference to the player
+
+    void Start ()
+    {
+        player = GameObject.FindGameObjectsWithTag("Player")[0];
+    }
 
     void FixedUpdate()
     {
