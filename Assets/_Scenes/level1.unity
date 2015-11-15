@@ -236,6 +236,10 @@ Prefab:
       propertyPath: inputController
       value: 
       objectReference: {fileID: 2132428168}
+    - target: {fileID: 11458084, guid: 8137c3241dae75a489f908934560c558, type: 2}
+      propertyPath: invulerabilityDelay
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8137c3241dae75a489f908934560c558, type: 2}
   m_IsPrefabParent: 0
