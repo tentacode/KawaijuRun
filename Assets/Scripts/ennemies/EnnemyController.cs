@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using System;
@@ -24,7 +25,9 @@ public class EnnemyController : MonoBehaviour
     
     public enum EnnemyTypes {Tank, Helico};
     public EnnemyTypes ennemyType;
-
+    
+    public int ennemyScore = 10;
+    
     private Rigidbody2D rb;
     private int stepIndex = 0;
     private bool isTriggered = false;
@@ -57,6 +60,10 @@ public class EnnemyController : MonoBehaviour
         if (other.tag == "Player" || other.tag == "BulletMC")
         {
             if (other.tag == "BulletMC") {
+                // add score
+                var scoreController = GameObject.FindGameObjectsWithTag("ScoreController")[0];
+                scoreController.GetComponent<ScoreController>().AddScore(ennemyScore);
+
                 Destroy(other.gameObject);
             }
             Die();
@@ -109,7 +116,6 @@ public class EnnemyController : MonoBehaviour
     {
         if(animator != null)
         {
-            Debug.Log("bukkake");
             animator.SetTrigger("shoot");
         }
 

@@ -4,7 +4,7 @@ using System.Collections;
 
 public class MainCharacterController : MonoBehaviour
 {
-    public enum States {Idle, Shooting, Jumping, Dead, Start, Crushing};
+    public enum States {Idle, Shooting, Jumping, Dead, Start, Crushing, Crouching};
     public float invulerabilityDelay;
     public float gameOverDelay;
 
@@ -25,7 +25,7 @@ public class MainCharacterController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (invulnerable || state == States.Dead) {
+        if (state == States.Dead) {
             return;
         }
 
@@ -33,10 +33,16 @@ public class MainCharacterController : MonoBehaviour
         {
             var ennemyController = other.gameObject.GetComponent<EnnemyController>();
             if (ennemyController && state == States.Crushing && ennemyController.ennemyType == EnnemyController.EnnemyTypes.Tank) {
+                // add score
+                var scoreController = GameObject.FindGameObjectsWithTag("ScoreController")[0];
+                scoreController.GetComponent<ScoreController>().AddScore(ennemyController.ennemyScore);
+
                 return;
             }
 
-            StartCoroutine(Hurt());
+            if (!invulnerable) {
+                StartCoroutine(Hurt());
+            }
         }
     }
 
