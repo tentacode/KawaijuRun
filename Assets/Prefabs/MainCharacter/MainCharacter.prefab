@@ -184,7 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
-  cooldown: .400000006
+  cooldown: .300000012
 --- !u!114 &11458084
 MonoBehaviour:
   m_ObjectHideFlags: 1
