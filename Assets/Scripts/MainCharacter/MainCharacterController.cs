@@ -4,7 +4,7 @@ using System.Collections;
 
 public class MainCharacterController : MonoBehaviour
 {
-    public enum States {Idle, Shooting, Jumping, Dead, Start};
+    public enum States {Idle, Shooting, Jumping, Dead, Start, Crushing};
     public float invulerabilityDelay;
     public float gameOverDelay;
 
@@ -30,6 +30,7 @@ public class MainCharacterController : MonoBehaviour
 
         if (other.tag == "Ennemy")
         {
+            
             StartCoroutine(Hurt());
         }
     }
