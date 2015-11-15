@@ -28,7 +28,19 @@ public class GameController : MonoBehaviour
     {
         mainCharacterController.SetState(MainCharacterController.States.Idle);
 
-        splashScreen.SetActive(false);
+        setAllBackgroundLaunchPosition();
+
+        splashScreen.SetActive(false); To FIX
         mainUI.SetActive(true);
+    }
+
+    void setAllBackgroundLaunchPosition()
+    {
+        GameObject[] backgroundsController = GameObject.FindGameObjectsWithTag("Background");
+
+        foreach(GameObject go in backgroundsController)
+        {
+            go.GetComponent<BackgroundScroller>().setLaunchPosition();
+        }
     }
 }

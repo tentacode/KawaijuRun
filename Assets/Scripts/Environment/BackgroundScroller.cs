@@ -7,19 +7,21 @@ using System.Collections;
 public class BackgroundScroller : MonoBehaviour
 {
     public GameController gameController;
-
-    public float scrollSpeedIdle = 1.0f;
+    
     public float scrollSpeed = 1.0f;
-    public Rigidbody2D mainCharacterRB;
 
     private float tileLenght = 0.0f;
     private Vector3 startPosition;
     private Vector2 mainCharacterBasePosition;
-    
+    private GameObject mainCharacter;
+    private Rigidbody2D mainCharacterRB;
+
     void Start()
     {
         startPosition = transform.position;
         tileLenght = this.GetComponent<BoxCollider2D>().size.x * transform.lossyScale.x;
+        mainCharacter = GameObject.FindGameObjectsWithTag("Player")[0];
+        mainCharacterRB = mainCharacter.GetComponent<Rigidbody2D>();
         mainCharacterBasePosition = mainCharacterRB.position;
     }
 
@@ -27,12 +29,17 @@ public class BackgroundScroller : MonoBehaviour
     {
         float newPosition;
 
-        if (mainCharacterRB.velocity == Vector2.zero) {
-            newPosition = Mathf.Repeat(Time.time * scrollSpeedIdle, tileLenght); // TODO
+        if (mainCharacter.GetComponent<MainCharacterController>().getState() == MainCharacterController.States.Start) {
+            newPosition = Mathf.Repeat(Time.time * mainCharacter.GetComponent<MainCharacterMover>().walkSpeed * scrollSpeed, tileLenght); // TODO
         } else {
-            newPosition = Mathf.Repeat((mainCharacterRB.position.x - mainCharacterBasePosition.x) * scrollSpeed, tileLenght);
+            newPosition = Mathf.Repeat((mainCharacter.transform.position.x - mainCharacterBasePosition.x) * scrollSpeed, tileLenght);
         }
 
-        transform.position = startPosition + Vector3.left * newPosition + new Vector3(transform.parent.position.x, 0.0f, 0.0f);
+        transform.position = Vector3.right * (transform.parent.position.x - newPosition) + startPosition;
+    }
+
+    public void setLaunchPosition()
+    {
+        startPosition = transform.position;
     }
 }

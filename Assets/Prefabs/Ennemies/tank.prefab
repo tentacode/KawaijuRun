@@ -27,7 +27,6 @@ GameObject:
   - 61: {fileID: 6141208}
   - 50: {fileID: 5006078}
   - 58: {fileID: 5833998}
-  - 114: {fileID: 11420752}
   - 114: {fileID: 11486130}
   m_Layer: 0
   m_Name: tank
@@ -103,17 +102,6 @@ BoxCollider2D:
   m_Offset: {x: .197609067, y: -.269466639}
   serializedVersion: 2
   m_Size: {x: 1.58082938, y: 1.41616678}
---- !u!114 &11420752
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183024}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b94911f2026aaf64abce2fbf67af73cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11486130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,7 +124,7 @@ MonoBehaviour:
   ammo: {fileID: 193086, guid: 187c8dedb313e874f9fc945ae4e3d243, type: 2}
   movingSpeed: 5
   isKinematic: 0
-  hasPassTrigger: 0
+  isMoving: 0
 --- !u!212 &21232172
 SpriteRenderer:
   m_ObjectHideFlags: 1

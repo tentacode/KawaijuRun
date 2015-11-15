@@ -5,10 +5,11 @@ public class MainCharacterMover : MonoBehaviour
 {
     public float walkSpeed = 10f;
 
-    private float currentSpeed { get; set; }
+    public float currentSpeed;
     private Rigidbody2D rb;
 
     private int health = 3;
+    private bool doMove = true;
 
 	void Start () 
     {
@@ -22,10 +23,24 @@ public class MainCharacterMover : MonoBehaviour
             return;
         }
 
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            rb.velocity = new Vector2(0.0f, rb.velocity.y);
+            doMove = !doMove;
+        }
 
-        Walk();
+
+        if(doMove)
+        {
+            Walk();
+        }
+        else
+        {
+            rb.velocity = new Vector2(0.0f, rb.velocity.y);
+        }
+
         currentSpeed = rb.velocity.x;
-	}
+    }
 
     void Walk()
     {

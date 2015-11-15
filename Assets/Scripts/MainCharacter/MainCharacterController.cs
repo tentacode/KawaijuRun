@@ -47,7 +47,7 @@ public class MainCharacterController : MonoBehaviour
             GameObject gameOverUi = GameObject.FindGameObjectsWithTag("GameOver")[0];
             yield return new WaitForSeconds(gameOverDelay);
             gameOverUi.GetComponent<Text>().text = "GAME OVER";
-            return true;
+            yield return true;
         }
 
         invulnerable = true;
