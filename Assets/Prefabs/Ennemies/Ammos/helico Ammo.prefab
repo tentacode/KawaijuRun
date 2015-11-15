@@ -74,7 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   launchVelocity: {x: -2, y: -15}
-  forwardAmmo: {fileID: 21300002, guid: 82a0ca965393aa7489ed0eab611a3aa3, type: 3}
+  forwardAmmo: {fileID: 21300002, guid: 99452947d4bd38a4381e8c7c30cb582f, type: 3}
 --- !u!114 &11452234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -111,7 +111,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 82a0ca965393aa7489ed0eab611a3aa3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 99452947d4bd38a4381e8c7c30cb582f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -152,6 +152,16 @@ Prefab:
       propertyPath: m_TagString
       value: Ennemy
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 99452947d4bd38a4381e8c7c30cb582f,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: forwardAmmo
+      value: 
+      objectReference: {fileID: 21300002, guid: 99452947d4bd38a4381e8c7c30cb582f,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193086}

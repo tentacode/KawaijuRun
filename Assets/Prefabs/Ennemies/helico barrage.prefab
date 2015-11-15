@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.6000004, y: 2.46000004, z: .041015625}
+  m_LocalPosition: {x: 0, y: 2.46000004, z: .041015625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441684}
@@ -162,7 +162,7 @@ MonoBehaviour:
   movingSpeed: 0
   isKinematic: 1
   ennemyType: 1
-  isMoving: 0
+  ennemyScore: 10
 --- !u!212 &21205958
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -212,6 +212,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: ennemyType
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
