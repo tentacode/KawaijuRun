@@ -153,6 +153,7 @@ MonoBehaviour:
   ammo: {fileID: 193086, guid: ad68dfa919327834fb52d209fcd7fb17, type: 2}
   movingSpeed: 5
   isKinematic: 1
+  ennemyType: 1
   isMoving: 0
 --- !u!212 &21205958
 SpriteRenderer:
@@ -200,6 +201,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f7fc3856e7e0efd49b0867901edc4cf0, type: 2}
+    - target: {fileID: 0}
+      propertyPath: ennemyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 124590}

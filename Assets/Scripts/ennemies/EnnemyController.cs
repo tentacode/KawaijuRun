@@ -21,6 +21,9 @@ public class EnnemyController : MonoBehaviour
 
     public float movingSpeed;
     public bool isKinematic;
+    
+    public enum EnnemyTypes {Tank, Helico};
+    public EnnemyTypes ennemyType;
 
     private Rigidbody2D rb;
     private int stepIndex = 0;

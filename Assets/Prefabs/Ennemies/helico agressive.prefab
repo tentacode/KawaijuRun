@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.1999998, y: 2.70000005, z: .041015625}
+  m_LocalPosition: {x: 50.4000015, y: 1.89999998, z: .041015625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441684}
@@ -132,8 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e143cd25b301004884ce226aabc65fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: .5
-  hoverSpeed: 4
+  amplitude: 0
+  hoverSpeed: 0
   hasPassTrigger: 0
 --- !u!114 &11443374
 MonoBehaviour:
@@ -146,17 +146,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb0a16f81e8d8d499f7ce02cbaed97d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenario:
-  - action: 2
-    delayForNextStep: 1
-  - action: 1
-    delayForNextStep: 1.5
-  - action: 2
-    delayForNextStep: 1
-  shootPoint: {fileID: 110312}
-  ammo: {fileID: 193086, guid: ad68dfa919327834fb52d209fcd7fb17, type: 2}
-  movingSpeed: 5
-  isKinematic: 1
+  scenario: []
+  shootPoint: {fileID: 0}
+  ammo: {fileID: 0}
+  movingSpeed: 0
+  isKinematic: 0
+  ennemyType: 1
   isMoving: 0
 --- !u!212 &21205958
 SpriteRenderer:
