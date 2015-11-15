@@ -9,7 +9,7 @@ public class MainCharacterController : MonoBehaviour
     public float gameOverDelay;
 
     private States state = States.Start;
-    private int heart = 3;
+    public int heart = 3;
     private bool invulnerable = false;
 
     public void SetState(States newState)
