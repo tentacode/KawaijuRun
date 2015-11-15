@@ -97,7 +97,7 @@ public class EnnemyController : MonoBehaviour
         StartCoroutine(ExecuteStep());
     }
 
-    void Shoot()
+    public virtual void Shoot()
     {
         Instantiate(ammo, gameObject.transform.position, Quaternion.identity);
         ammo.GetComponent<Ammo>().Launch();
