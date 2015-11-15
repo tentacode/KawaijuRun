@@ -212,7 +212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452242, guid: b21a2af631400a24fa641d62fe94f1ed, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 124590, guid: b21a2af631400a24fa641d62fe94f1ed, type: 2}
       propertyPath: m_Name
@@ -492,7 +492,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11481136, guid: 1555bb78b6fda4a4891d25c1192fc657, type: 2}
       propertyPath: m_Text
-      value: GAME OVER
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 11481136, guid: 1555bb78b6fda4a4891d25c1192fc657, type: 2}
       propertyPath: m_FontData.m_FontSize
@@ -550,7 +550,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 183024, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_Name
@@ -616,7 +616,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452242, guid: b21a2af631400a24fa641d62fe94f1ed, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b21a2af631400a24fa641d62fe94f1ed, type: 2}
@@ -663,7 +663,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11486130, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: scenario.Array.data[0].action
@@ -843,7 +843,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452242, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 124590, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
       propertyPath: m_Name
@@ -957,7 +957,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 183024, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_Name
@@ -1003,7 +1003,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452242, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 124590, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
       propertyPath: m_Name
@@ -1099,7 +1099,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452242, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f7d84a483d3fc3b45bfd91007a63b723, type: 2}
@@ -1141,7 +1141,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452242, guid: 84af5b276ee69134baea4140ddbad00c, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84af5b276ee69134baea4140ddbad00c, type: 2}
@@ -1183,7 +1183,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480362, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 183024, guid: ade2f2e2b9c98d449b93c54aebfdd075, type: 2}
       propertyPath: m_Name
@@ -1315,7 +1315,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3afbba88e64d2484c8d77cea1e93fd14, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .699999988
+  m_Volume: .600000024
   m_Pitch: 1
   Loop: 1
   Mute: 0

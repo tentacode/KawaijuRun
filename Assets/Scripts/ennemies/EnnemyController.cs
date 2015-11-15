@@ -34,6 +34,8 @@ public class EnnemyController : MonoBehaviour
     private bool isMoving = false;
     private Animator animator;
 
+    public GameObject explosion;
+
     // Use this for initialization
     void Start ()
     {
@@ -146,6 +148,9 @@ public class EnnemyController : MonoBehaviour
 
     void Die()
     {
+        GameObject explosionInstance = Instantiate(explosion, rb.transform.position, Quaternion.identity) as GameObject;
+        Destroy(explosionInstance, 3.0f);
+
         gameObject.SetActive(false);
         Destroy(gameObject, 1f);
     }
