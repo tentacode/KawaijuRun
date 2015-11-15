@@ -14,6 +14,7 @@ public class MainCharacterController : MonoBehaviour
 
     public void SetState(States newState)
     {
+        Debug.Log("New state: " + newState);
         state = newState;
     }
 
