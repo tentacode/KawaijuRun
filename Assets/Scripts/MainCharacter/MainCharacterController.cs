@@ -73,18 +73,18 @@ public class MainCharacterController : MonoBehaviour
             yield return new WaitForSeconds(gameOverDelay);
             gameOverUi.GetComponent<Text>().text = "GAME OVER";
             yield return true;
+        } else {
+            animator.SetTrigger("hit");
+            invulnerable = true;
+
+            float lastWalkSpeed = GetComponent<MainCharacterMover>().walkSpeed;
+            GetComponent<MainCharacterMover>().walkSpeed = 0.0f;
+            yield return new WaitForSeconds(hitStopDelay);
+            GetComponent<MainCharacterMover>().walkSpeed = lastWalkSpeed;
+
+            yield return new WaitForSeconds(invulerabilityDelay);
+            invulnerable = false;
         }
-
-        animator.SetTrigger("hit");
-        invulnerable = true;
-
-        float lastWalkSpeed = GetComponent<MainCharacterMover>().walkSpeed;
-        GetComponent<MainCharacterMover>().walkSpeed = 0.0f;
-        yield return new WaitForSeconds(hitStopDelay);
-        GetComponent<MainCharacterMover>().walkSpeed = lastWalkSpeed;
-
-        yield return new WaitForSeconds(invulerabilityDelay);
-        invulnerable = false;
     }
 
     public void switchAnim()
