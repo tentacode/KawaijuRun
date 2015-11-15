@@ -4,7 +4,7 @@ using System.Collections;
 
 public class MainCharacterController : MonoBehaviour
 {
-    public enum States {Idle, Shooting, Jumping, Dead, Start, Crushing};
+    public enum States {Idle, Shooting, Jumping, Dead, Start, Crushing, Crouching};
     public float invulerabilityDelay;
     public float gameOverDelay;
 

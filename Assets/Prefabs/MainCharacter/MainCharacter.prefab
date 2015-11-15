@@ -17,6 +17,7 @@ GameObject:
   - 114: {fileID: 11458084}
   - 114: {fileID: 11405512}
   - 114: {fileID: 11445912}
+  - 114: {fileID: 11438180}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
@@ -90,9 +91,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.244739532, y: -.181044579}
+  m_Offset: {x: -.259999752, y: -.317542553}
   serializedVersion: 2
-  m_Size: {x: 2.4894805, y: 3.91275263}
+  m_Size: {x: 2.5, y: 3.48809195}
 --- !u!95 &9571950
 Animator:
   serializedVersion: 3
@@ -138,6 +139,21 @@ MonoBehaviour:
   inputController: {fileID: 0}
   jumpForce: 800
   cooldown: .699999988
+--- !u!114 &11438180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7880af254bc84d6b8c67b9ff0b872e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCharacterController: {fileID: 11458084}
+  inputController: {fileID: 0}
+  cooldown: 1
+  crouchDelta: {x: 2, y: -2}
 --- !u!114 &11443752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -182,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invulerabilityDelay: 1
   gameOverDelay: 3
-  heart: 1
+  heart: 3
 --- !u!212 &21252676
 SpriteRenderer:
   m_ObjectHideFlags: 1
