@@ -140,6 +140,10 @@ Prefab:
       propertyPath: gameOverDelay
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11458084, guid: 8137c3241dae75a489f908934560c558, type: 2}
+      propertyPath: heart
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8137c3241dae75a489f908934560c558, type: 2}
   m_IsPrefabParent: 0
@@ -294,7 +298,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22429642, guid: 1555bb78b6fda4a4891d25c1192fc657, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 22429642, guid: 1555bb78b6fda4a4891d25c1192fc657, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -334,10 +338,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22429642, guid: 1555bb78b6fda4a4891d25c1192fc657, type: 2}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11457380, guid: 1555bb78b6fda4a4891d25c1192fc657, type: 2}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

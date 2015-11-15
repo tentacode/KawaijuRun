@@ -12,6 +12,7 @@ GameObject:
   - 58: {fileID: 5886330}
   - 50: {fileID: 5023614}
   - 114: {fileID: 11412840}
+  - 114: {fileID: 11434340}
   m_Layer: 0
   m_Name: fireball
   m_TagString: BulletMC
@@ -72,6 +73,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 3
+--- !u!114 &11434340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82c13d34c73b548e4a660688d5e01dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 500
 --- !u!212 &21234786
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -111,7 +124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: speed
-      value: 30
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: lifetime
