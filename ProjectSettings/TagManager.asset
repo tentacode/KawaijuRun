@@ -13,6 +13,8 @@ TagManager:
   - KaijuEye
   - KillerTrigger
   - Ground
+  - MainUI
+  - Score
   layers:
   - Default
   - TransparentFX

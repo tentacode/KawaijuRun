@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using System;
@@ -24,7 +25,9 @@ public class EnnemyController : MonoBehaviour
     
     public enum EnnemyTypes {Tank, Helico};
     public EnnemyTypes ennemyType;
-
+    
+    public int ennemyScore = 10;
+    
     private Rigidbody2D rb;
     private int stepIndex = 0;
     private bool isTriggered = false;
@@ -57,6 +60,12 @@ public class EnnemyController : MonoBehaviour
         if (other.tag == "Player" || other.tag == "BulletMC")
         {
             if (other.tag == "BulletMC") {
+                // ce code est beau, ne pas toucher
+                int score;
+                var scoreText = GameObject.FindGameObjectsWithTag("Score")[0];
+                Int32.TryParse(scoreText.GetComponent<Text>().text, out score);
+                scoreText.GetComponent<Text>().text = (score + ennemyScore).ToString();
+
                 Destroy(other.gameObject);
             }
             Die();
