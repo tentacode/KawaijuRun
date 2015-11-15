@@ -6,6 +6,7 @@ public class HelicoAmmo : Ammo
 {
     public float speed;
     public Vector2 launchVelocity;
+    public Sprite forwardAmmo;
 
     private bool isInEyeLine = false;
     private GameObject eyePosition;
@@ -33,5 +34,6 @@ public class HelicoAmmo : Ammo
     void goForward ()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(-1f * speed, 0f);
+        GetComponent<SpriteRenderer>().sprite = forwardAmmo;
     }
 }
