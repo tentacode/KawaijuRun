@@ -138,7 +138,7 @@ MonoBehaviour:
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
   jumpForce: 800
-  cooldown: .699999988
+  cooldown: .680000007
 --- !u!114 &11438180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
-  cooldown: 1
+  cooldown: .5
   crouchDelta: {x: 1.20000005, y: -2}
 --- !u!114 &11443752
 MonoBehaviour:
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
-  cooldown: .5
+  cooldown: .400000006
 --- !u!114 &11458084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,6 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invulerabilityDelay: 1
+  hitStopDelay: 0
   gameOverDelay: 3
   heart: 3
 --- !u!212 &21252676
@@ -223,7 +224,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300144, guid: 2a47a51b24f8cd9418182e646eff2cc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a47a51b24f8cd9418182e646eff2cc3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

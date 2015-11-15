@@ -115,7 +115,7 @@ public class MainCharacterController : MonoBehaviour
                 break;
 
             case States.Shooting:
-                animator.SetTrigger("fire");
+                //animator.SetTrigger("fire");
                 break;
 
             case States.Dead:
