@@ -8,7 +8,6 @@ public class MainCharacterMover : MonoBehaviour
     public float currentSpeed;
     private Rigidbody2D rb;
 
-    private int health = 3;
     private bool doMove = true;
 
 	void Start () 
