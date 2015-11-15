@@ -5,6 +5,7 @@ using System;
 public class HelicoAmmo : Ammo
 {
     public float speed;
+    public float prepareTime = 0.2f;
     public Vector2 launchVelocity;
 
     private bool isInEyeLine = false;
@@ -13,7 +14,7 @@ public class HelicoAmmo : Ammo
     public override void Launch()
     {
         eyePosition = GameObject.FindGameObjectsWithTag("KaijuEye")[0];
-        fall();
+        prepare();
     }
 
     void FixedUpdate()
@@ -23,6 +24,12 @@ public class HelicoAmmo : Ammo
             isInEyeLine = true;
             goForward();
         }
+    }
+
+    IEnumerator prepare ()
+    {
+        yield return new WaitForSeconds(prepareTime);
+        fall();
     }
 
     void fall ()
