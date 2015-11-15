@@ -132,8 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e143cd25b301004884ce226aabc65fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0
-  hoverSpeed: 0
+  amplitude: .600000024
+  hoverSpeed: 6
   hasPassTrigger: 0
 --- !u!114 &11443374
 MonoBehaviour:
@@ -146,10 +146,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb0a16f81e8d8d499f7ce02cbaed97d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenario: []
-  shootPoint: {fileID: 0}
-  ammo: {fileID: 0}
-  movingSpeed: 0
+  scenario:
+  - action: 2
+    delayForNextStep: 1
+  - action: 1
+    delayForNextStep: .5
+  - action: 1
+    delayForNextStep: .5
+  shootPoint: {fileID: 110312}
+  ammo: {fileID: 193086, guid: ad68dfa919327834fb52d209fcd7fb17, type: 2}
+  movingSpeed: 5
   isKinematic: 0
   ennemyType: 1
   isMoving: 0
@@ -187,6 +193,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: scenario.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_TagString
       value: Ennemy
       objectReference: {fileID: 0}
@@ -199,6 +209,50 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f7fc3856e7e0efd49b0867901edc4cf0, type: 2}
+    - target: {fileID: 0}
+      propertyPath: shootPoint
+      value: 
+      objectReference: {fileID: 110312}
+    - target: {fileID: 0}
+      propertyPath: ammo
+      value: 
+      objectReference: {fileID: 193086, guid: ad68dfa919327834fb52d209fcd7fb17, type: 2}
+    - target: {fileID: 0}
+      propertyPath: movingSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: amplitude
+      value: .600000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hoverSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scenario.Array.data[0].action
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scenario.Array.data[0].delayForNextStep
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scenario.Array.data[1].delayForNextStep
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scenario.Array.data[1].action
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scenario.Array.data[2].delayForNextStep
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scenario.Array.data[2].action
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 124590}
