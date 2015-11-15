@@ -60,11 +60,9 @@ public class EnnemyController : MonoBehaviour
         if (other.tag == "Player" || other.tag == "BulletMC")
         {
             if (other.tag == "BulletMC") {
-                // ce code est beau, ne pas toucher
-                int score;
-                var scoreText = GameObject.FindGameObjectsWithTag("Score")[0];
-                Int32.TryParse(scoreText.GetComponent<Text>().text, out score);
-                scoreText.GetComponent<Text>().text = (score + ennemyScore).ToString();
+                // add score
+                var scoreController = GameObject.FindGameObjectsWithTag("ScoreController")[0];
+                scoreController.GetComponent<ScoreController>().AddScore(ennemyScore);
 
                 Destroy(other.gameObject);
             }
@@ -118,7 +116,6 @@ public class EnnemyController : MonoBehaviour
     {
         if(animator != null)
         {
-            Debug.Log("bukkake");
             animator.SetTrigger("shoot");
         }
 
