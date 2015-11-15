@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8204974503174750a600a27e6792f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCharacterController: {fileID: 0}
+  mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
   cooldown: .5
 --- !u!114 &11458084
@@ -180,9 +180,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb8359113454297bc1e4f87b2e3d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invulerabilityDelay: 1.5
-  gameOverDelay: 0
-  heart: 3
+  invulerabilityDelay: 1
+  gameOverDelay: 3
+  heart: 1
 --- !u!212 &21252676
 SpriteRenderer:
   m_ObjectHideFlags: 1
