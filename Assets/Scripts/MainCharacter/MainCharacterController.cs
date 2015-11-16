@@ -4,7 +4,7 @@ using System.Collections;
 
 public class MainCharacterController : MonoBehaviour
 {
-    public enum States {Idle, Shooting, Jumping, Dead, Start, Crushing, Crouching};
+    public enum States {Idle, Shooting, Jumping, Dead, Start, Crushing, Crouching, GameOver};
     public float invulerabilityDelay;
     public float hitStopDelay;
     public float gameOverDelay;
@@ -22,7 +22,7 @@ public class MainCharacterController : MonoBehaviour
 
     public void SetState(States newState)
     {
-        if (state == States.Dead) {
+        if (state == States.Dead && newState != States.GameOver) {
             return;
         }
 
@@ -75,6 +75,7 @@ public class MainCharacterController : MonoBehaviour
             GameObject gameOverUi = GameObject.FindGameObjectsWithTag("GameOver")[0];
             yield return new WaitForSeconds(gameOverDelay);
             gameOverUi.GetComponent<Text>().text = "GAME OVER";
+            SetState(States.GameOver);
             yield return true;
         } else {
             animator.SetTrigger("hit");
