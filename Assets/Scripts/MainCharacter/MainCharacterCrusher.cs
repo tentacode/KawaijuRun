@@ -6,7 +6,16 @@ public class MainCharacterCrusher : MonoBehaviour
     public MainCharacterController mainCharacterController;
     public InputController inputController;
     public float cooldown;
+    public float crushSpeed;
+
+    private float playerSpeed;
+    private MainCharacterMover playerMover;
     
+    void Start()
+    {
+        playerMover = GetComponent<MainCharacterMover>();
+    }
+
     void FixedUpdate ()
     {
         if (!CanCrush()) {
@@ -22,6 +31,9 @@ public class MainCharacterCrusher : MonoBehaviour
 
     void Crush()
     {
+        playerSpeed = playerMover.walkSpeed;
+        playerMover.walkSpeed = crushSpeed;
+
         mainCharacterController.SetState(MainCharacterController.States.Crushing);
 
         StartCoroutine(Cooldown());
@@ -36,6 +48,7 @@ public class MainCharacterCrusher : MonoBehaviour
     {
         yield return new WaitForSeconds(cooldown);
 
+        playerMover.walkSpeed = playerSpeed;
         mainCharacterController.SetState(MainCharacterController.States.Idle);
     }
 }

@@ -138,7 +138,7 @@ MonoBehaviour:
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
   jumpForce: 800
-  jumpSpeed: 0
+  jumpSpeed: 6
   cooldown: .649999976
 --- !u!114 &11438180
 MonoBehaviour:
@@ -186,6 +186,7 @@ MonoBehaviour:
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
   cooldown: .25
+  crushSpeed: 6
 --- !u!114 &11458084
 MonoBehaviour:
   m_ObjectHideFlags: 1
