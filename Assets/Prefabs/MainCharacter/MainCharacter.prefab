@@ -138,6 +138,7 @@ MonoBehaviour:
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
   jumpForce: 800
+  jumpSpeed: 0
   cooldown: .649999976
 --- !u!114 &11438180
 MonoBehaviour:
@@ -170,7 +171,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 406028}
   projectile: {fileID: 177584, guid: 4f11b4ecf1ada1f409c60e8aea9c39d4, type: 2}
   speed: 18
-  cooldown: .270000011
+  cooldown: .25
 --- !u!114 &11445912
 MonoBehaviour:
   m_ObjectHideFlags: 1
