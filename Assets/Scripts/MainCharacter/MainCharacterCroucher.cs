@@ -10,13 +10,13 @@ public class MainCharacterCroucher : MonoBehaviour
 
     private Vector2 initialColliderSize;
     private Vector2 initialColliderOffset;
-    private BoxCollider2D collider;
+    private BoxCollider2D playerCollider;
 
     void Start()
     {
-        collider = GetComponent<BoxCollider2D>();
-        initialColliderSize = collider.size;
-        initialColliderOffset = collider.offset;
+        playerCollider = GetComponent<BoxCollider2D>();
+        initialColliderSize = playerCollider.size;
+        initialColliderOffset = playerCollider.offset;
     }
     
     void FixedUpdate ()
@@ -35,13 +35,13 @@ public class MainCharacterCroucher : MonoBehaviour
     void Crouch()
     {
         mainCharacterController.SetState(MainCharacterController.States.Crouching);
-        collider.size = new Vector2(
-            collider.size.x + crouchDelta.x,
-            collider.size.y + crouchDelta.y
+        playerCollider.size = new Vector2(
+            playerCollider.size.x + crouchDelta.x,
+            playerCollider.size.y + crouchDelta.y
         );
-        collider.offset = new Vector2(
-            collider.offset.x + (crouchDelta.x / 2),
-            collider.offset.y + (crouchDelta.y / 2)
+        playerCollider.offset = new Vector2(
+            playerCollider.offset.x + (crouchDelta.x / 2),
+            playerCollider.offset.y + (crouchDelta.y / 2)
         );
 
         StartCoroutine(Cooldown());
@@ -56,8 +56,8 @@ public class MainCharacterCroucher : MonoBehaviour
     {
         yield return new WaitForSeconds(cooldown);
 
-        collider.size = initialColliderSize;
-        collider.offset = initialColliderOffset;
+        playerCollider.size = initialColliderSize;
+        playerCollider.offset = initialColliderOffset;
 
         mainCharacterController.SetState(MainCharacterController.States.Idle);
     }
