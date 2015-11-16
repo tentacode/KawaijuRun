@@ -29,7 +29,7 @@ public class MainCharacterCrusher : MonoBehaviour
 
     bool CanCrush()
     {
-        return mainCharacterController.getState() == MainCharacterController.States.Idle;
+        return mainCharacterController.GetState() == MainCharacterController.States.Idle;
     }
 
     IEnumerator Cooldown()

@@ -17,7 +17,7 @@ public class MainCharacterMover : MonoBehaviour
 	
 	void Update ()
     {
-        MainCharacterController.States state = GetComponent<MainCharacterController>().getState();
+        MainCharacterController.States state = GetComponent<MainCharacterController>().GetState();
         if (state == MainCharacterController.States.Dead || state == MainCharacterController.States.Start) {
             return;
         }

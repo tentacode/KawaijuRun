@@ -29,7 +29,7 @@ public class BackgroundScroller : MonoBehaviour
     {
         float newPosition;
 
-        if (mainCharacter.GetComponent<MainCharacterController>().getState() == MainCharacterController.States.Start) {
+        if (mainCharacter.GetComponent<MainCharacterController>().GetState() == MainCharacterController.States.Start) {
             newPosition = Mathf.Repeat(Time.time * mainCharacter.GetComponent<MainCharacterMover>().walkSpeed * scrollSpeed, tileLenght); // TODO
         } else {
             newPosition = Mathf.Repeat((mainCharacter.transform.position.x - mainCharacterBasePosition.x) * scrollSpeed, tileLenght);

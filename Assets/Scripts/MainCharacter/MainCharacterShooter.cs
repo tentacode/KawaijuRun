@@ -43,7 +43,7 @@ public class MainCharacterShooter : MonoBehaviour
 
 	bool CanShoot()
 	{
-		return mainCharacterController.getState() == MainCharacterController.States.Idle;
+		return mainCharacterController.GetState() == MainCharacterController.States.Idle;
 	}
 
 	IEnumerator Cooldown()

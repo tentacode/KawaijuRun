@@ -49,7 +49,7 @@ public class MainCharacterCroucher : MonoBehaviour
 
     bool CanCrouch()
     {
-        return mainCharacterController.getState() == MainCharacterController.States.Idle;
+        return mainCharacterController.GetState() == MainCharacterController.States.Idle;
     }
 
     IEnumerator Cooldown()

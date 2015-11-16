@@ -10,11 +10,11 @@ public class GameController : MonoBehaviour
 
     void Update () 
     {
-        if (mainCharacterController.getState() == MainCharacterController.States.Start && inputController.IsTap()) {
+        if (mainCharacterController.GetState() == MainCharacterController.States.Start && inputController.IsTap()) {
             StartGame();
         }
 
-        if (mainCharacterController.getState() == MainCharacterController.States.Dead && inputController.IsTap()) {
+        if (mainCharacterController.GetState() == MainCharacterController.States.Dead && inputController.IsTap()) {
             RestartGame();
         }
 	}

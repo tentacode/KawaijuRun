@@ -28,10 +28,10 @@ public class MainCharacterController : MonoBehaviour
 
         state = newState;
 
-        switchAnim();
+        SwitchAnim();
     }
 
-    public States getState()
+    public States GetState()
     {
         return state;
     }
@@ -90,41 +90,30 @@ public class MainCharacterController : MonoBehaviour
         }
     }
 
-    public void switchAnim()
+    public void SwitchAnim()
     {
         switch(state)
         {
-            case States.Idle:
-                break;
-
             case States.Jumping:
                 animator.SetTrigger("jump");
                 break;
-
             case States.Crushing:
-                if(crushRight)
-                {
+                if (crushRight) {
                     animator.SetTrigger("crunchRight");
-                }
-                else
-                {
+                } else {
                     animator.SetTrigger("crunchLeft");
                 }
                 crushRight = !crushRight;
                 break;
-
             case States.Crouching:
                 animator.SetTrigger("crouch");
                 break;
-
             case States.Shooting:
                 //animator.SetTrigger("fire");
                 break;
-
             case States.Dead:
                 animator.SetTrigger("die");
                 break;
-
             default:
                 break;
         }

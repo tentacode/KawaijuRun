@@ -39,7 +39,7 @@ public class MainCharacterJumper : MonoBehaviour
 
     bool CanJump()
     {
-        return mainCharacterController.getState() == MainCharacterController.States.Idle;
+        return mainCharacterController.GetState() == MainCharacterController.States.Idle;
     }
 
     IEnumerator Cooldown()

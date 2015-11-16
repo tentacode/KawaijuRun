@@ -12,9 +12,9 @@ GameObject:
   - 61: {fileID: 6147976}
   - 50: {fileID: 5022068}
   - 95: {fileID: 9571950}
+  - 114: {fileID: 11458084}
   - 114: {fileID: 11401374}
   - 114: {fileID: 11443752}
-  - 114: {fileID: 11458084}
   - 114: {fileID: 11405512}
   - 114: {fileID: 11445912}
   - 114: {fileID: 11438180}
@@ -138,7 +138,7 @@ MonoBehaviour:
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
   jumpForce: 800
-  cooldown: .680000007
+  cooldown: .649999976
 --- !u!114 &11438180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 406028}
   projectile: {fileID: 177584, guid: 4f11b4ecf1ada1f409c60e8aea9c39d4, type: 2}
   speed: 18
-  cooldown: .25
+  cooldown: .270000011
 --- !u!114 &11445912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
-  cooldown: .300000012
+  cooldown: .25
 --- !u!114 &11458084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb8359113454297bc1e4f87b2e3d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invulerabilityDelay: 1
+  invulerabilityDelay: 1.5
   hitStopDelay: 0
   gameOverDelay: 3
   heart: 3
