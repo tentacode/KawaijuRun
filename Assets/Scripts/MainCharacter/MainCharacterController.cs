@@ -22,7 +22,11 @@ public class MainCharacterController : MonoBehaviour
 
     public void SetState(States newState)
     {
-        if (state == States.Dead && newState != States.GameOver) {
+        if (state == States.Dead) {
+            if (newState == States.GameOver) {
+                state = newState;
+            }
+            
             return;
         }
 
@@ -38,7 +42,7 @@ public class MainCharacterController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (state == States.Dead) {
+        if (state == States.Dead || state == States.GameOver) {
             return;
         }
 
