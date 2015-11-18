@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2a47a51b24f8cd9418182e646eff2cc3
-timeCreated: 1447586004
+timeCreated: 1447870377
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -170,1117 +170,1117 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_1
       rect:
         serializedVersion: 2
-        x: 512
+        x: 514
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_2
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1028
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_3
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1542
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_4
       rect:
         serializedVersion: 2
-        x: 2048
+        x: 2056
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_5
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 2570
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_6
       rect:
         serializedVersion: 2
-        x: 3072
+        x: 3084
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_7
       rect:
         serializedVersion: 2
-        x: 3584
+        x: 3598
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_8
       rect:
         serializedVersion: 2
-        x: 4096
+        x: 4112
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_9
       rect:
         serializedVersion: 2
-        x: 4608
+        x: 4626
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_10
       rect:
         serializedVersion: 2
-        x: 5120
+        x: 5140
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_11
       rect:
         serializedVersion: 2
-        x: 5632
+        x: 5654
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_12
       rect:
         serializedVersion: 2
-        x: 6144
+        x: 6168
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_13
       rect:
         serializedVersion: 2
-        x: 6656
+        x: 6682
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_14
       rect:
         serializedVersion: 2
-        x: 7168
+        x: 7196
         y: 7680
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 7168
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_16
       rect:
         serializedVersion: 2
-        x: 512
-        y: 7168
+        x: 514
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_17
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 7168
+        x: 1028
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_18
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 7168
+        x: 1542
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_19
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 7168
+        x: 2056
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_20
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 7168
+        x: 2570
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_21
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 7168
+        x: 3084
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_22
       rect:
         serializedVersion: 2
-        x: 3584
-        y: 7168
+        x: 3598
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_23
       rect:
         serializedVersion: 2
-        x: 4096
-        y: 7168
+        x: 4112
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_24
       rect:
         serializedVersion: 2
-        x: 4608
-        y: 7168
+        x: 4626
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_25
       rect:
         serializedVersion: 2
-        x: 5120
-        y: 7168
+        x: 5140
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_26
       rect:
         serializedVersion: 2
-        x: 5632
-        y: 7168
+        x: 5654
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_27
       rect:
         serializedVersion: 2
-        x: 6144
-        y: 7168
+        x: 6168
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_28
       rect:
         serializedVersion: 2
-        x: 6656
-        y: 7168
+        x: 6682
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_29
       rect:
         serializedVersion: 2
-        x: 7168
-        y: 7168
+        x: 7196
+        y: 7166
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_30
       rect:
         serializedVersion: 2
         x: 0
-        y: 6656
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_31
       rect:
         serializedVersion: 2
-        x: 512
-        y: 6656
+        x: 514
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_32
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 6656
+        x: 1028
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_33
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 6656
+        x: 1542
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_34
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 6656
+        x: 2056
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_35
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 6656
+        x: 2570
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_36
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 6656
+        x: 3084
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_37
       rect:
         serializedVersion: 2
-        x: 3584
-        y: 6656
+        x: 3598
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_38
       rect:
         serializedVersion: 2
-        x: 4096
-        y: 6656
+        x: 4112
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_39
       rect:
         serializedVersion: 2
-        x: 4608
-        y: 6656
+        x: 4626
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_40
       rect:
         serializedVersion: 2
-        x: 5120
-        y: 6656
+        x: 5140
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_41
       rect:
         serializedVersion: 2
-        x: 5632
-        y: 6656
+        x: 5654
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_42
       rect:
         serializedVersion: 2
-        x: 6144
-        y: 6656
+        x: 6168
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_43
       rect:
         serializedVersion: 2
-        x: 6656
-        y: 6656
+        x: 6682
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_44
       rect:
         serializedVersion: 2
-        x: 7168
-        y: 6656
+        x: 7196
+        y: 6652
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_45
       rect:
         serializedVersion: 2
         x: 0
-        y: 6144
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_46
       rect:
         serializedVersion: 2
-        x: 512
-        y: 6144
+        x: 514
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_47
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 6144
+        x: 1028
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_48
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 6144
+        x: 1542
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_49
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 6144
+        x: 2056
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_50
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 6144
+        x: 2570
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_51
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 6144
+        x: 3084
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_52
       rect:
         serializedVersion: 2
-        x: 3584
-        y: 6144
+        x: 3598
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_53
       rect:
         serializedVersion: 2
-        x: 4096
-        y: 6144
+        x: 4112
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_54
       rect:
         serializedVersion: 2
-        x: 4608
-        y: 6144
+        x: 4626
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_55
       rect:
         serializedVersion: 2
-        x: 5120
-        y: 6144
+        x: 5140
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_56
       rect:
         serializedVersion: 2
-        x: 5632
-        y: 6144
+        x: 5654
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_57
       rect:
         serializedVersion: 2
-        x: 6144
-        y: 6144
+        x: 6168
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_58
       rect:
         serializedVersion: 2
-        x: 6656
-        y: 6144
+        x: 6682
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_59
       rect:
         serializedVersion: 2
-        x: 7168
-        y: 6144
+        x: 7196
+        y: 6138
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_60
       rect:
         serializedVersion: 2
         x: 0
-        y: 5632
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_61
       rect:
         serializedVersion: 2
-        x: 512
-        y: 5632
+        x: 514
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_62
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 5632
+        x: 1028
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_63
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 5632
+        x: 1542
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_64
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 5632
+        x: 2056
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_65
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 5632
+        x: 2570
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_66
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 5632
+        x: 3084
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_67
       rect:
         serializedVersion: 2
-        x: 3584
-        y: 5632
+        x: 3598
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_68
       rect:
         serializedVersion: 2
-        x: 4096
-        y: 5632
+        x: 4112
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_69
       rect:
         serializedVersion: 2
-        x: 4608
-        y: 5632
+        x: 4626
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_70
       rect:
         serializedVersion: 2
-        x: 5120
-        y: 5632
+        x: 5140
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_71
       rect:
         serializedVersion: 2
-        x: 5632
-        y: 5632
+        x: 5654
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_72
       rect:
         serializedVersion: 2
-        x: 6144
-        y: 5632
+        x: 6168
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_73
       rect:
         serializedVersion: 2
-        x: 6656
-        y: 5632
+        x: 6682
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_74
       rect:
         serializedVersion: 2
-        x: 7168
-        y: 5632
+        x: 7196
+        y: 5624
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_75
       rect:
         serializedVersion: 2
         x: 0
-        y: 5120
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_76
       rect:
         serializedVersion: 2
-        x: 512
-        y: 5120
+        x: 514
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_77
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 5120
+        x: 1028
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_78
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 5120
+        x: 1542
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_79
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 5120
+        x: 2056
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_80
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 5120
+        x: 2570
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_81
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 5120
+        x: 3084
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_82
       rect:
         serializedVersion: 2
-        x: 3584
-        y: 5120
+        x: 3598
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_83
       rect:
         serializedVersion: 2
-        x: 4096
-        y: 5120
+        x: 4112
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_84
       rect:
         serializedVersion: 2
-        x: 4608
-        y: 5120
+        x: 4626
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_85
       rect:
         serializedVersion: 2
-        x: 5120
-        y: 5120
+        x: 5140
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_86
       rect:
         serializedVersion: 2
-        x: 5632
-        y: 5120
+        x: 5654
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_87
       rect:
         serializedVersion: 2
-        x: 6144
-        y: 5120
+        x: 6168
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_88
       rect:
         serializedVersion: 2
-        x: 6656
-        y: 5120
+        x: 6682
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_89
       rect:
         serializedVersion: 2
-        x: 7168
-        y: 5120
+        x: 7196
+        y: 5110
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_90
       rect:
         serializedVersion: 2
         x: 0
-        y: 4608
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_91
       rect:
         serializedVersion: 2
-        x: 512
-        y: 4608
+        x: 514
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_92
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 4608
+        x: 1028
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_93
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 4608
+        x: 1542
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_94
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 4608
+        x: 2056
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_95
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 4608
+        x: 2570
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_96
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 4608
+        x: 3084
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_97
       rect:
         serializedVersion: 2
-        x: 3584
-        y: 4608
+        x: 3598
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_98
       rect:
         serializedVersion: 2
-        x: 4096
-        y: 4608
+        x: 4112
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_99
       rect:
         serializedVersion: 2
-        x: 4608
-        y: 4608
+        x: 4626
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_100
       rect:
         serializedVersion: 2
-        x: 5120
-        y: 4608
+        x: 5140
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_101
       rect:
         serializedVersion: 2
-        x: 5632
-        y: 4608
+        x: 5654
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_102
       rect:
         serializedVersion: 2
-        x: 6144
-        y: 4608
+        x: 6168
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_103
       rect:
         serializedVersion: 2
-        x: 6656
-        y: 4608
+        x: 6682
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_104
       rect:
         serializedVersion: 2
-        x: 7168
-        y: 4608
+        x: 7196
+        y: 4596
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_105
       rect:
         serializedVersion: 2
         x: 0
-        y: 4096
+        y: 4082
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_106
       rect:
         serializedVersion: 2
-        x: 512
-        y: 4096
+        x: 514
+        y: 4082
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_107
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 4096
+        x: 1028
+        y: 4082
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_108
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 4096
+        x: 1542
+        y: 4082
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_109
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 4096
+        x: 2056
+        y: 4082
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_110
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 4096
+        x: 2570
+        y: 4082
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: KaijuSpriteSheetFinal_111
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 4096
+        x: 3084
+        y: 4082
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
