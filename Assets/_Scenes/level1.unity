@@ -533,19 +533,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11466680, guid: 737d5ec8672577144a553a74e115a69b, type: 2}
-      propertyPath: gameController
-      value: 
-      objectReference: {fileID: 227027442}
-    - target: {fileID: 11436746, guid: 737d5ec8672577144a553a74e115a69b, type: 2}
-      propertyPath: gameController
-      value: 
-      objectReference: {fileID: 227027442}
     - target: {fileID: 11484966, guid: 737d5ec8672577144a553a74e115a69b, type: 2}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 227027442}
     - target: {fileID: 11477858, guid: 737d5ec8672577144a553a74e115a69b, type: 2}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 227027442}
+    - target: {fileID: 11466680, guid: 737d5ec8672577144a553a74e115a69b, type: 2}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 227027442}
+    - target: {fileID: 11436746, guid: 737d5ec8672577144a553a74e115a69b, type: 2}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 227027442}
@@ -1867,15 +1867,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 11438180, guid: 8137c3241dae75a489f908934560c558, type: 2}
-      propertyPath: inputController
-      value: 
-      objectReference: {fileID: 2132428168}
     - target: {fileID: 11445912, guid: 8137c3241dae75a489f908934560c558, type: 2}
-      propertyPath: inputController
-      value: 
-      objectReference: {fileID: 2132428168}
-    - target: {fileID: 11405512, guid: 8137c3241dae75a489f908934560c558, type: 2}
       propertyPath: inputController
       value: 
       objectReference: {fileID: 2132428168}
@@ -1883,10 +1875,14 @@ Prefab:
       propertyPath: inputController
       value: 
       objectReference: {fileID: 2132428168}
-    - target: {fileID: 11458084, guid: 8137c3241dae75a489f908934560c558, type: 2}
-      propertyPath: gameOverDelay
-      value: 1.5
-      objectReference: {fileID: 0}
+    - target: {fileID: 11438180, guid: 8137c3241dae75a489f908934560c558, type: 2}
+      propertyPath: inputController
+      value: 
+      objectReference: {fileID: 2132428168}
+    - target: {fileID: 11405512, guid: 8137c3241dae75a489f908934560c558, type: 2}
+      propertyPath: inputController
+      value: 
+      objectReference: {fileID: 2132428168}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8137c3241dae75a489f908934560c558, type: 2}
   m_IsPrefabParent: 0
@@ -2381,80 +2377,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 476530, guid: 746a898b1f4ed8c40b95450027df4d9a, type: 2}
   m_PrefabInternal: {fileID: 1108060578}
---- !u!1 &1914334019 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 162510, guid: 8997eefd462b74723a62ac66872e0824, type: 2}
-  m_PrefabInternal: {fileID: 1397103978}
---- !u!82 &1914334020
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1914334019}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3afbba88e64d2484c8d77cea1e93fd14, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: .600000024
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!1 &1915253347
 GameObject:
   m_ObjectHideFlags: 0

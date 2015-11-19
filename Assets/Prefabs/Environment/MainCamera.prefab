@@ -378,8 +378,8 @@ Transform:
   m_Children:
   - {fileID: 461792}
   - {fileID: 437086}
-  - {fileID: 481772}
   - {fileID: 475144}
+  - {fileID: 481772}
   - {fileID: 467294}
   - {fileID: 435914}
   - {fileID: 457894}
@@ -610,7 +610,7 @@ Transform:
   - {fileID: 407366}
   - {fileID: 451694}
   m_Father: {fileID: 401410}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!4 &481772
 Transform:
   m_ObjectHideFlags: 1
@@ -625,7 +625,7 @@ Transform:
   - {fileID: 409952}
   - {fileID: 467714}
   m_Father: {fileID: 401410}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!4 &490572
 Transform:
   m_ObjectHideFlags: 1
@@ -1056,7 +1056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
-  scrollSpeed: .400000006
+  scrollSpeed: .5
 --- !u!114 &11484966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
-  scrollSpeed: .699999988
+  scrollSpeed: .75
 --- !u!124 &12486926
 Behaviour:
   m_ObjectHideFlags: 1

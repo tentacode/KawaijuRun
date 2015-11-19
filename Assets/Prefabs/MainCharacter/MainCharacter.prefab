@@ -200,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invulerabilityDelay: 1.5
   hitStopDelay: 0
-  gameOverDelay: 3
+  gameOverDelay: 1.5
   heart: 3
 --- !u!212 &21252676
 SpriteRenderer:
