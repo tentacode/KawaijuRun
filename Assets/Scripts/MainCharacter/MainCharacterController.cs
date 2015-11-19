@@ -82,6 +82,7 @@ public class MainCharacterController : MonoBehaviour
             SetState(States.GameOver);
             yield return true;
         } else {
+            GetComponent<Blinker>().SetBlink(true);
             animator.SetTrigger("hit");
             invulnerable = true;
 
@@ -91,6 +92,7 @@ public class MainCharacterController : MonoBehaviour
             GetComponent<MainCharacterMover>().walkSpeed = lastWalkSpeed;
 
             yield return new WaitForSeconds(invulerabilityDelay);
+            GetComponent<Blinker>().SetBlink(false);
             invulnerable = false;
         }
     }

@@ -18,6 +18,7 @@ GameObject:
   - 114: {fileID: 11405512}
   - 114: {fileID: 11445912}
   - 114: {fileID: 11438180}
+  - 114: {fileID: 11435652}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
@@ -140,6 +141,19 @@ MonoBehaviour:
   jumpForce: 800
   jumpSpeed: 6
   cooldown: .649999976
+--- !u!114 &11435652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 813234ac774864bdfa59d0fca570a4d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hiddenInterval: .150000006
+  visibleInterval: .300000012
 --- !u!114 &11438180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,7 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
-  cooldown: .25
+  cooldown: .300000012
   crushSpeed: 6
 --- !u!114 &11458084
 MonoBehaviour:
@@ -199,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invulerabilityDelay: 1.5
-  hitStopDelay: 0
+  hitStopDelay: .600000024
   gameOverDelay: 1.5
   heart: 3
 --- !u!212 &21252676
