@@ -14,10 +14,12 @@ public class MainCharacterController : MonoBehaviour
     private bool invulnerable = false;
     private Animator animator;
     private bool crushRight = true;
+    private Rigidbody2D rb;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     public void SetState(States newState)
@@ -49,7 +51,8 @@ public class MainCharacterController : MonoBehaviour
         if (other.tag == "Ennemy")
         {
             var ennemyController = other.gameObject.GetComponent<EnnemyController>();
-            if (ennemyController && state == States.Crushing && ennemyController.ennemyType == EnnemyController.EnnemyTypes.Tank) {
+
+            if (IsCrushingTank(other) || IsJumpingTank(other)) {
                 // add score
                 var scoreController = GameObject.FindGameObjectsWithTag("ScoreController")[0];
                 scoreController.GetComponent<ScoreController>().AddScore(ennemyController.ennemyScore);
@@ -61,6 +64,29 @@ public class MainCharacterController : MonoBehaviour
                 StartCoroutine(Hurt());
             }
         }
+    }
+    
+    private bool IsCrushingTank(Collider2D other)
+    {
+        var ennemyController = other.gameObject.GetComponent<EnnemyController>();
+        
+        return ennemyController 
+            && state == States.Crushing 
+            && ennemyController.ennemyType == EnnemyController.EnnemyTypes.Tank
+        ;
+    }
+    
+    private bool IsJumpingTank(Collider2D other)
+    {
+        var ennemyController = other.gameObject.GetComponent<EnnemyController>();
+
+        Debug.Log (rb.velocity.y);
+
+        return ennemyController 
+            && state == States.Jumping 
+            && ennemyController.ennemyType == EnnemyController.EnnemyTypes.Tank
+            && rb.velocity.y < -1
+        ;
     }
 
     IEnumerator Hurt()
