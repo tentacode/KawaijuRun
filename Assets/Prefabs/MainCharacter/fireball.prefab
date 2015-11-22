@@ -13,6 +13,7 @@ GameObject:
   - 50: {fileID: 5023614}
   - 114: {fileID: 11412840}
   - 114: {fileID: 11434340}
+  - 114: {fileID: 11441396}
   m_Layer: 0
   m_Name: fireball
   m_TagString: BulletMC
@@ -85,6 +86,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 500
+--- !u!114 &11441396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a4c8126072140188e5fa04808ab4e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyObject: {fileID: 112388, guid: 51fd686def1837b4bb0729f80dd09c0e, type: 2}
 --- !u!212 &21234786
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -103,7 +116,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -139,6 +154,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 7d6ed8b8b6cd9408b9633738f2d2b957,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: destroyObject
+      value: 
+      objectReference: {fileID: 112388, guid: 51fd686def1837b4bb0729f80dd09c0e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 177584}

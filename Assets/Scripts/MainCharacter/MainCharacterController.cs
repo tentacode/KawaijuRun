@@ -80,8 +80,6 @@ public class MainCharacterController : MonoBehaviour
     {
         var ennemyController = other.gameObject.GetComponent<EnnemyController>();
 
-        Debug.Log (rb.velocity.y);
-
         return ennemyController 
             && state == States.Jumping 
             && ennemyController.ennemyType == EnnemyController.EnnemyTypes.Tank
