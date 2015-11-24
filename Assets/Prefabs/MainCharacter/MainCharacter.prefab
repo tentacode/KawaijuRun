@@ -199,8 +199,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
-  cooldown: .300000012
-  crushSpeed: 6
+  cooldown: .400000006
+  crushSpeed: 5
 --- !u!114 &11458084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb8359113454297bc1e4f87b2e3d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invulerabilityDelay: 1.5
+  invulerabilityDelay: 2
   hitStopDelay: .600000024
   gameOverDelay: 1.5
   heart: 3
@@ -234,15 +234,13 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2a47a51b24f8cd9418182e646eff2cc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ee54bda40f206e4296c475521cca297, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

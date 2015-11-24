@@ -132,9 +132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e143cd25b301004884ce226aabc65fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 100
-  hoverSpeed: 2100
+  amplitude: 1
+  hoverSpeed: 7
   hasPassTrigger: 0
+  initialHeight: 0
 --- !u!114 &11443374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,7 +156,7 @@ MonoBehaviour:
     delayForNextStep: 10
   shootPoint: {fileID: 110312}
   ammo: {fileID: 193086, guid: ad68dfa919327834fb52d209fcd7fb17, type: 2}
-  movingSpeed: 6
+  movingSpeed: 9
   isKinematic: 1
   ennemyType: 1
   ennemyScore: 10
@@ -199,15 +200,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: amplitude
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: hoverSpeed
-      value: 2100
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: movingSpeed
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: scenario.Array.data[2].delayForNextStep
