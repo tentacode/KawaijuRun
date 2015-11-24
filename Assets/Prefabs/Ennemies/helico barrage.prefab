@@ -148,13 +148,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenario:
   - action: 0
-    delayForNextStep: 1
+    delayForNextStep: 1.5
   - action: 1
-    delayForNextStep: .150000006
+    delayForNextStep: .25
   - action: 1
     delayForNextStep: .600000024
   - action: 1
-    delayForNextStep: .150000006
+    delayForNextStep: .25
   - action: 1
     delayForNextStep: 5
   shootPoint: {fileID: 110312}
@@ -225,6 +225,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scenario.Array.data[1].delayForNextStep
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scenario.Array.data[3].delayForNextStep
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scenario.Array.data[0].delayForNextStep
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -185,7 +185,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 406028}
   projectile: {fileID: 177584, guid: 4f11b4ecf1ada1f409c60e8aea9c39d4, type: 2}
   speed: 18
-  cooldown: .25
+  cooldown: .150000006
 --- !u!114 &11445912
 MonoBehaviour:
   m_ObjectHideFlags: 1

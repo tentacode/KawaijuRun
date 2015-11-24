@@ -141,7 +141,7 @@ MonoBehaviour:
   movingSpeed: 5
   isKinematic: 0
   ennemyType: 0
-  ennemyScore: 10
+  ennemyScore: 15
   explosion: {fileID: 102358, guid: 0cd3fc7060441fd40a1488a4d0cfacbd, type: 2}
 --- !u!212 &21246782
 SpriteRenderer:
@@ -191,6 +191,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: ennemyScore
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

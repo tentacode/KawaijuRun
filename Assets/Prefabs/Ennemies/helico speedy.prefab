@@ -133,9 +133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amplitude: 1
-  hoverSpeed: 7
+  hoverSpeed: 6
   hasPassTrigger: 0
-  initialHeight: 0
 --- !u!114 &11443374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,7 +155,7 @@ MonoBehaviour:
     delayForNextStep: 10
   shootPoint: {fileID: 110312}
   ammo: {fileID: 193086, guid: ad68dfa919327834fb52d209fcd7fb17, type: 2}
-  movingSpeed: 9
+  movingSpeed: 10
   isKinematic: 1
   ennemyType: 1
   ennemyScore: 10
@@ -204,11 +203,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: hoverSpeed
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: movingSpeed
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: scenario.Array.data[2].delayForNextStep
