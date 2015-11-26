@@ -18,6 +18,7 @@ TagManager:
   - ScoreController
   - HighScore
   - EndLevel
+  - LifePickup
   layers:
   - Default
   - TransparentFX

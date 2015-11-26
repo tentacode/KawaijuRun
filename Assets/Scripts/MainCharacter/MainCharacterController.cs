@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MainCharacterController : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class MainCharacterController : MonoBehaviour
     private Animator animator;
     private bool crushRight = true;
     private Rigidbody2D rb;
+    private int maxHeart = 3;
+    [SerializeField]
+    private List<GameObject> heartsUI;
 
     void Start()
     {
@@ -81,6 +85,12 @@ public class MainCharacterController : MonoBehaviour
                 StartCoroutine(Hurt());
             }
         }
+
+        if(other.tag == "LifePickup")
+        {
+            gainLife();
+            Destroy(other.gameObject);
+        }
     }
     
     private bool IsCrushingTank(Collider2D other)
@@ -104,15 +114,30 @@ public class MainCharacterController : MonoBehaviour
         ;
     }
 
+    void gainLife()
+    {
+        if(heart == maxHeart || state == States.Dead)
+        {
+            return;
+        }
+
+        heartsUI[heart].SetActive(true);
+
+        heart++;
+        
+    }
+
     IEnumerator Hurt()
     {
         heart--;
 
+        heartsUI[heart].SetActive(false);
+        /*
         var heartUis = GameObject.FindGameObjectsWithTag("Heart");
         if (heartUis.Length > 0) {
             GameObject heartUi = heartUis[0];
             heartUi.SetActive(false);
-        }
+        } */
 
         if (heart == 0) {
             SetState(States.Dead);

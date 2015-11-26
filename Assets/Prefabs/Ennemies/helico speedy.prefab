@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenario:
   - action: 2
-    delayForNextStep: 1
+    delayForNextStep: 3
   - action: 1
     delayForNextStep: 1.5
   - action: 2
@@ -237,6 +237,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scenario.Array.data[0].delayForNextStep
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

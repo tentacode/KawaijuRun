@@ -150,8 +150,8 @@ MonoBehaviour:
   - action: 2
     delayForNextStep: 1
   - action: 1
-    delayForNextStep: .5
-  - action: 1
+    delayForNextStep: 3
+  - action: 2
     delayForNextStep: .5
   shootPoint: {fileID: 110312}
   ammo: {fileID: 193086, guid: ad68dfa919327834fb52d209fcd7fb17, type: 2}
@@ -240,7 +240,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: scenario.Array.data[1].delayForNextStep
-      value: .5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: scenario.Array.data[1].action
@@ -252,7 +252,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: scenario.Array.data[2].action
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.x

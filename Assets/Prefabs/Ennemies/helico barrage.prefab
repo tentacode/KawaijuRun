@@ -150,7 +150,7 @@ MonoBehaviour:
   - action: 0
     delayForNextStep: 1.5
   - action: 1
-    delayForNextStep: .25
+    delayForNextStep: 1
   - action: 1
     delayForNextStep: .600000024
   - action: 1
@@ -228,7 +228,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: scenario.Array.data[1].delayForNextStep
-      value: .25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: scenario.Array.data[3].delayForNextStep
