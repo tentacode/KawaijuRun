@@ -100,9 +100,11 @@ public class MainCharacterController : MonoBehaviour
         if (heart == 0) {
             SetState(States.Dead);
             GetComponent<MainCharacterMover>().walkSpeed = 0.0f;
-            GameObject gameOverUi = GameObject.FindGameObjectsWithTag("GameOver")[0];
             yield return new WaitForSeconds(gameOverDelay);
+            GameObject gameOverUi = GameObject.FindGameObjectsWithTag("GameOver")[0];
             gameOverUi.GetComponent<Text>().text = "GAME OVER";
+            GameObject highScoreUi = GameObject.FindGameObjectsWithTag("HighScore")[0];
+            highScoreUi.GetComponent<Text>().text = "High score " + PlayerPrefs.GetFloat("highscore");
             SetState(States.GameOver);
             yield return true;
         } else {

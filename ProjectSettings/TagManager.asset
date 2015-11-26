@@ -16,6 +16,7 @@ TagManager:
   - MainUI
   - Score
   - ScoreController
+  - HighScore
   layers:
   - Default
   - TransparentFX
