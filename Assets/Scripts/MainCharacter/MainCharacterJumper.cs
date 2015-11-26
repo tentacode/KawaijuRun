@@ -10,7 +10,6 @@ public class MainCharacterJumper : MonoBehaviour
     public float cooldown;
     
     private Rigidbody2D rb;
-    private float playerSpeed;
     private MainCharacterMover playerMover;
 
     void Start()
@@ -19,7 +18,7 @@ public class MainCharacterJumper : MonoBehaviour
         playerMover = GetComponent<MainCharacterMover>();
     }
     
-    void FixedUpdate ()
+    void Update ()
     {
         if (!CanJump()) {
             return;
@@ -35,7 +34,6 @@ public class MainCharacterJumper : MonoBehaviour
     void Jump()
     {
         mainCharacterController.SetState(MainCharacterController.States.Jumping);
-        playerSpeed = playerMover.walkSpeed;
         playerMover.walkSpeed = jumpSpeed;
         rb.AddForce(new Vector2(0.0f, jumpForce));
 
@@ -51,7 +49,7 @@ public class MainCharacterJumper : MonoBehaviour
     {
         yield return new WaitForSeconds(cooldown);
 
-        playerMover.walkSpeed = playerSpeed;
+        playerMover.ResetSpeed();
         mainCharacterController.SetState(MainCharacterController.States.Idle);
     }
 }

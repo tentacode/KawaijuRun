@@ -110,10 +110,9 @@ public class MainCharacterController : MonoBehaviour
             animator.SetTrigger("hit");
             invulnerable = true;
 
-            float lastWalkSpeed = GetComponent<MainCharacterMover>().walkSpeed;
             GetComponent<MainCharacterMover>().walkSpeed = 0.0f;
             yield return new WaitForSeconds(hitStopDelay);
-            GetComponent<MainCharacterMover>().walkSpeed = lastWalkSpeed;
+            GetComponent<MainCharacterMover>().ResetSpeed();
 
             yield return new WaitForSeconds(invulerabilityDelay);
             GetComponent<Blinker>().SetBlink(false);

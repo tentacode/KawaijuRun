@@ -9,10 +9,13 @@ public class MainCharacterMover : MonoBehaviour
     private Rigidbody2D rb;
 
     private bool doMove = true;
+    private float initialSpeed;
 
 	void Start () 
     {
         rb = GetComponent<Rigidbody2D>();
+
+        initialSpeed = walkSpeed;
 	}
 	
 	void Update ()
@@ -39,6 +42,11 @@ public class MainCharacterMover : MonoBehaviour
         }
 
         currentSpeed = rb.velocity.x;
+    }
+
+    public void ResetSpeed()
+    {
+        walkSpeed = initialSpeed;
     }
 
     void Walk()
