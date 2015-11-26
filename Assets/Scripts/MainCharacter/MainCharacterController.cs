@@ -4,7 +4,7 @@ using System.Collections;
 
 public class MainCharacterController : MonoBehaviour
 {
-    public enum States {Idle, Shooting, Jumping, Dead, Start, Crushing, Crouching, GameOver};
+    public enum States {Idle, Shooting, Jumping, Dead, Start, Crushing, Crouching, GameOver, End};
     public float invulerabilityDelay;
     public float hitStopDelay;
     public float gameOverDelay;
@@ -42,10 +42,27 @@ public class MainCharacterController : MonoBehaviour
         return state;
     }
 
+    void EndLevel()
+    {
+        SetState(States.End);
+
+        GameObject gameOverUi = GameObject.FindGameObjectsWithTag("GameOver")[0];
+        gameOverUi.GetComponent<Text>().text = "YOU WIN";
+        GameObject scoreUi = GameObject.FindGameObjectsWithTag("Score")[0];
+        string currentScore = scoreUi.GetComponent<Text>().text;
+        scoreUi.GetComponent<Text>().text = "";
+        GameObject highScoreUi = GameObject.FindGameObjectsWithTag("HighScore")[0];
+        highScoreUi.GetComponent<Text>().text = "Score " + currentScore;
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (state == States.Dead || state == States.GameOver) {
             return;
+        }
+
+        if (other.tag == "EndLevel") {
+            EndLevel();
         }
 
         if (other.tag == "Ennemy")

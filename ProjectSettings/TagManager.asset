@@ -17,6 +17,7 @@ TagManager:
   - Score
   - ScoreController
   - HighScore
+  - EndLevel
   layers:
   - Default
   - TransparentFX

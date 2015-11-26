@@ -17,6 +17,10 @@ public class GameController : MonoBehaviour
         if (mainCharacterController.GetState() == MainCharacterController.States.GameOver && inputController.IsTap()) {
             RestartGame();
         }
+
+        if (mainCharacterController.GetState() == MainCharacterController.States.End && inputController.IsTap()) {
+            RestartGame();
+        }
 	}
 
     void RestartGame()
