@@ -19,6 +19,7 @@ GameObject:
   - 114: {fileID: 11445912}
   - 114: {fileID: 11438180}
   - 114: {fileID: 11435652}
+  - 82: {fileID: 8233466}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
@@ -95,6 +96,76 @@ BoxCollider2D:
   m_Offset: {x: -.259999752, y: -.474811077}
   serializedVersion: 2
   m_Size: {x: 2.5, y: 3.80262899}
+--- !u!82 &8233466
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112424}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: .400000006
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9571950
 Animator:
   serializedVersion: 3
@@ -139,8 +210,8 @@ MonoBehaviour:
   mainCharacterController: {fileID: 11458084}
   inputController: {fileID: 0}
   jumpForce: 800
-  jumpSpeed: 6
-  cooldown: .649999976
+  jumpSpeed: 5
+  cooldown: .769999981
 --- !u!114 &11435652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -216,6 +287,15 @@ MonoBehaviour:
   hitStopDelay: .600000024
   gameOverDelay: 1.5
   heart: 3
+  heartsUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hurtSounds:
+  - {fileID: 8300000, guid: bf880b99403a1465d9185437632e0fb6, type: 3}
+  - {fileID: 8300000, guid: 3242bb422287545049b4bcc2441bb3d8, type: 3}
+  - {fileID: 8300000, guid: a8520fdf3b20345f3b6f5e80cfaa9a4e, type: 3}
+  - {fileID: 8300000, guid: 17d7abfef41ff448c926c162b85d481a, type: 3}
 --- !u!212 &21252676
 SpriteRenderer:
   m_ObjectHideFlags: 1

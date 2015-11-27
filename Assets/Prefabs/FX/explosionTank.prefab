@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21204140}
   - 95: {fileID: 9529474}
   - 82: {fileID: 8294006}
+  - 114: {fileID: 11490886}
   m_Layer: 0
   m_Name: explosionTank
   m_TagString: Untagged
@@ -39,9 +40,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9eaa1827be3d34bbfa86c30662f94eb4, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .349999994
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -50,7 +51,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: 0
+  Pan2D: .300000012
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -117,6 +118,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11490886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6c80df41e4d4133868956425a45b6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: f203bc7b0e32441c3a99eeacfeffcfa2, type: 3}
+  - {fileID: 8300000, guid: ac379a8c367dc4727a49da2a8d30d23b, type: 3}
+  - {fileID: 8300000, guid: c17a52df792ba40de8bb8d0898400a74, type: 3}
+  - {fileID: 8300000, guid: be2250b8eeec54aefba09b52b3826b9f, type: 3}
 --- !u!212 &21204140
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -151,6 +168,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: sounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_LocalRotation.z
       value: .707106829
       objectReference: {fileID: 0}
@@ -177,6 +198,34 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.y
       value: -.109999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: f203bc7b0e32441c3a99eeacfeffcfa2, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ac379a8c367dc4727a49da2a8d30d23b, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: c17a52df792ba40de8bb8d0898400a74, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: be2250b8eeec54aefba09b52b3826b9f, type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Volume
+      value: .349999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Pan2D
+      value: .300000012
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
