@@ -20,6 +20,8 @@ public class MainCharacterController : MonoBehaviour
     [SerializeField]
     private List<GameObject> heartsUI;
 
+    public List<AudioClip> hurtSounds;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -127,6 +129,14 @@ public class MainCharacterController : MonoBehaviour
         
     }
 
+    void HurtSound()
+    {
+        AudioClip hurtSound = hurtSounds[Random.Range(0, hurtSounds.Count)];
+        AudioSource source = GetComponent<AudioSource>();
+        source.clip = hurtSound;
+        source.Play();
+    }
+
     IEnumerator Hurt()
     {
         heart--;
@@ -138,6 +148,8 @@ public class MainCharacterController : MonoBehaviour
             GameObject heartUi = heartUis[0];
             heartUi.SetActive(false);
         } */
+
+        HurtSound();
 
         if (heart == 0) {
             SetState(States.Dead);
