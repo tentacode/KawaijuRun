@@ -21,6 +21,7 @@ public class MainCharacterController : MonoBehaviour
     private List<GameObject> heartsUI;
 
     public List<AudioClip> hurtSounds;
+    public AudioClip lifeUpSound;
 
     void Start()
     {
@@ -117,7 +118,11 @@ public class MainCharacterController : MonoBehaviour
     }
 
     void gainLife()
-    {
+    {  
+        AudioSource source = GetComponent<AudioSource>();
+        source.clip = lifeUpSound;
+        source.Play();
+
         if(heart == maxHeart || state == States.Dead)
         {
             return;
@@ -126,7 +131,6 @@ public class MainCharacterController : MonoBehaviour
         heartsUI[heart].SetActive(true);
 
         heart++;
-        
     }
 
     void HurtSound()
